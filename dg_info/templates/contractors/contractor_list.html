@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load wokerlist_tags %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+    <div class="row mt-5 border-bottom">
+        <h1 class="text-center">{{ Category.category }}</h1>
+    </div>
+    <div class="container pl-1">
+    <ol>
+        {% for с in contractors %}
+            <li class="lh-lg">
+                <a href="{{ с.get_absolute_url }}">{{ с.title }}{{ c }}</a><br>
+{#                <strong>Tel:</strong> {{ c.tel }} &nbsp; <strong>e-mail:</strong> {{ c.contractors.email }}#}
+            </li>
+        {% endfor %}
+    </ol>
+
+    {#        <div class="row px-5 py-3 border-bottom text-center">#}
+    {##}
+    {#            <div class="col"><strong>TEL: </strong>{{ Contractor.tel }}</div>#}
+    {#            <div class="col"><strong>e-mail: </strong>{{ Contractor.email }}</div>#}
+    {#            <div class="col"><strong>Адрес: </strong>{{ Contractor.adr }}</div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+{% endblock %}
+
+

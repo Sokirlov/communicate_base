@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load wokerlist_tags %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row mt-5 border-bottom">
+            <h1 class="text-center">{{ Contractor.title }}</h1>
+        </div>
+        <div class="row px-5 py-3 border-bottom text-center">
+
+            <div class="col"><strong>TEL: </strong>{{ Contractor.tel }}</div>
+            <div class="col"><strong>e-mail: </strong>{{ Contractor.email }}</div>
+            <div class="col"><strong>Адрес: </strong>{{ Contractor.adr }}</div>
+            {{ Contractor.category.id }}
+        </div>
+        <div class="d-flex flex-wrap text-center w-100">
+        <h3 class="w-100 m-3 p-2">Дополнительные данные</h3>
+        {% for foo in aditional %}
+            <div class="col"><strong>{{ foo.name }}:</strong> {{ foo.valuefield }}</div>
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+

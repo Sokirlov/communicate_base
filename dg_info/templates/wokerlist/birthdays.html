@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Дни рождения в этом месяце</h1>
+<div class="align-items-center container-fluid d-flex w-75">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Дата</th>
+            <th scope="col">Сотрудник</th>
+            <th scope="col">Отдел</th>
+        </tr>
+        </thead>
+        <tbody>
+{% for g in birthdays %}
+{#    <li class="lh-lg border-bottom">#}
+{#        {{ g.b_date }}<br><a href="/adr/{{ g.group.id }}/{{ g.id }}/">{{ g.name }}</a>#}
+{#    </li>#}
+
+
+    <tr>
+        <th scope="row">{{ g.b_date|date:"d E" }}<br/><span class="text-muted"> {{ g.b_date|date:"l" }}</span></th>
+        <td><a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a></td>
+        <td>{{ g.group }}</td>
+    </tr>
+
+
+
+
+{% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
+
+<div class="card" style="width: 18rem; height: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ g.b_date|date:"d E" }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ g.b_date|date:"l" }}</h6>
+{#    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>#}
+{#    <a href="#" class="card-link">Card link</a>#}
+    <a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+{% if lmenu %}
+    <div class="col col-4 border-end top-0 bottom-0 ps-4 bg-light" id="left-menu" style="min-height: 100vh;"> &nbsp;
+        <div class="d-flex flex-column d-grid gap-2">
+            <div class="accordion" id="accordionFlushExample">
+                {% for l in lmenu %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-{{ l.id }}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse-{{ l.id }}" aria-expanded="false"
+                                    aria-controls="flush-collapse-{{ l.id }}">
+                                {{ l.name }}
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapse-{{ l.id }}" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading-{{ l.id }}" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a href="/adr/{{ l.id }}/" class="d-flex flex-column">{{ l.name|upper }}</a>
+                                <hr/>
+                                <br/>
+                                {% if l.staff_set %}
+                                    <ul>
+                                        {% for foo in l.staff_set.all %}
+                                            <li class="lh-lg"><a
+                                                    href="/adr/{{ l.id }}/{{ foo.id }}/"> {{ foo.name }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if l_contrmenu or l_category %}
+    <div class="col col-4 border-end top-0 bottom-0 ps-4 bg-light" id="left-menu" style="min-height: 100vh;">
+        {% if l_category %}
+            <H2 class="text-center text-uppercase mt-5 text-muted">Категории подрядчиков </H2>
+            <div class="container d-flex mt-3">
+                {% for main in l_category %}
+                    <a href="{{ main.get_absolute_url }}"
+                       class="btn-outline-primary px-1 py-2 card m-1">{{ main.category }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if l_contrmenu %}
+            <H2 class="text-center text-uppercase mt-5 text-muted">Подрядчики </H2>
+            {% for cat in l_contrmenu %}
+                <a href="{{ cat.get_absolute_url }}">
+                    <div class="btn-outline-primary w-100 p-3 border-bottom text-center"> {% if cat.title %}
+                        {{ cat.title }}
+                    {% else %}
+                        {{ cat.category }}
+                    {% endif %} </div>
+                </a>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endif %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Сотрудники отдела</h1>
+<ol>
+    {% for s in staff %}
+        <a href="{{ s.id }}/"> <li>{{ s.name }}</li></a>
+    {% endfor %}
+</ol>
+{% endblock %}

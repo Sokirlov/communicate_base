@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Выбирете отдел</h1>
+<ol>
+{% for g in groups %}
+        <li class="lh-lg"><a href="/adr/{{ g.id }}/">{{ g.name }}</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

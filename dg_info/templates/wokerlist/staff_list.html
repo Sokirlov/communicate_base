@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Сотрудники</h1>
+<ol>
+{% for g in staff %}
+        <li class="lh-lg"><a href="{{ g.get_absolute_url }}">{{ g.name }}</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

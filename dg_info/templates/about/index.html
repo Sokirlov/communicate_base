@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load wokerlist_tags %}
+{% block content %}
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center ">
+
+    {% for ab in about %}
+        <div class="row w-75">
+        <h2 class="text-center border-bottom my-5">{{ ab.title }}</h2>
+        {{ ab.description|markdown }}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

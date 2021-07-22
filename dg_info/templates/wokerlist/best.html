@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Лучшие сотрудники</h1>
+    <div class="align-items-center container-fluid d-flex flex-column w-100">
+
+
+        {% for b in bestwokers %}
+            <div>
+            <H3 class="border-bottom text-center text-uppercase">{{ b.nominate }}</H3>
+            <div class="align-items-stretch d-flex flex-wrap">
+                {% for best in b.staff.all %}
+                    <div class="card m-2" style="width: calc(18vw - 4px); min-height: 30vw;">
+                        <div style="background: url('/media/{{ best.avatar }}'); width: calc(18vw - 6px); height: 18vw; background-size: cover; background-position: center;" class="card-img-top"  alt="{{ best.name }} - {{ best.title }}"></div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{{ best.get_absolute_url }}" class="card-link">{{ best.name }}</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted border-bottom py-2">{{ best.position }}</h6>
+                            <p class="card-text">Начал работать в компании c {{ best.start_work_date|date:"E Y" }}</p>
+                            {#    <a href="#" class="card-link">Card link</a>#}
+                            {#    <a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a>#}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <p>&nbsp;</p>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}
+
+<div class="card" style="width: 18rem; height: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{ g.b_date|date:"d E" }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ g.b_date|date:"l" }}</h6>
+        {#    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>#}
+        {#    <a href="#" class="card-link">Card link</a>#}
+        <a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a>
+    </div>
+</div>

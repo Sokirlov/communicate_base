@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100 align-self-stretch ">Подрядчики</h1>
+    <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-wrap">
+        {% for с in Contractors %}
+            <a class="text-decoration-none" href="{{ с.get_absolute_url }}"><div class="card p-5 m-1 btn-outline-primary display-5 ">
+            {{ с.category }}{{ c }}
+            </div></a>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
+
