@@ -32,7 +32,11 @@
           active text-uppercase text-decoration-underline
           {% endif %}" href="{% url 'contractors:contractors_main' %}">Подрядчики</a>
                 </li>
-
+                <li>
+                    <a class="nav-link{% if 'doc' in request.path %}
+          active text-uppercase text-decoration-underline
+          {% endif %}" href="{% url 'fileserv:main' %}">Шаблоны документов</a>
+                </li>
                 {#        <li class="nav-item">#}
                 {#          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>#}
                 {#        </li>#}

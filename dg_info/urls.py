@@ -11,6 +11,7 @@ urlpatterns = [
     path('adr/', include('wokerlist.urls'), name='wokerlist'),
     path('about/', include('about.urls'), name='about'),
     path('contractors/', include('contractors.urls'), name='contractors'),
+    path('doc/', include('fileserv.urls'), name='fileserv'),
     path('', TemplateView.as_view(template_name='index.html'), name='Index'),
     path('birthdays/', BirthdayView.as_view(), name='birthdays'),
     path('best/', BestWorkerView.as_view(), name='best'),

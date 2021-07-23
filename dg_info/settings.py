@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'about',
     'contractors',
+    'fileserv',
 ]
 
 MIDDLEWARE = [
