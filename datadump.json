@@ -1,0 +1,3816 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-07-07T11:15:25.902Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "ул.Полевая 24, 6-этаж",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-07-07T11:15:39.222Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "ул.Полевая 24, 7-этаж",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-07-07T11:16:10.357Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Взысканий",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-07-07T11:17:46.139Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Юредический",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-07-07T11:17:59.347Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "В работе",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-07-07T11:18:04.207Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "В отпуске",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-07-07T11:18:08.481Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Уволен",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-07-07T11:18:23.673Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Юрист",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-07-07T11:18:28.692Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Адвокат",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-07-07T11:28:59.016Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Алексей",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-07-07T11:29:27.980Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "HR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-07-07T11:29:42.094Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Марина",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-07-07T12:22:37.580Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Марина",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0441\\u0442\\u0443\\u0441 \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-07-07T12:22:43.724Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Алексей",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0441\\u0442\\u0443\\u0441 \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-07-07T14:24:54.950Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "И. Сикорского, 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2021-07-07T14:25:06.605Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "И. Сикорского, 8",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2021-07-07T14:33:11.344Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "ул.Полевая 24, д 7-этаж",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2021-07-07T14:33:31.843Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "ул. Полевая, 24 д (7этаж)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2021-07-07T14:33:41.526Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "ул.Полевая 24, д 6-этаж",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2021-07-07T14:34:33.627Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "ул. Полевая, 24 д (6 этаж)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2021-07-07T14:35:52.162Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "ул.Полевая 24, д 6-этаж",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2021-07-07T14:36:06.745Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "ул.Полевая 24, д 6-этаж",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2021-07-07T14:36:16.442Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "ул.Полевая 24, д 6-этаж",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2021-07-07T14:37:43.046Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Киев ул. Полевая, 24 д (7этаж)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2021-07-07T14:37:56.103Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Киев И. Сикорского, 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2021-07-07T14:38:05.101Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Киев, ул. Полевая, 24 д (6 этаж)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2021-07-07T14:38:13.434Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Киев,  И. Сикорского, 8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2021-07-07T14:38:19.908Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Киев,  ул. Полевая, 24 д (7этаж)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2021-07-07T14:38:44.566Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Юридический",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0434\\u0435\\u043f\\u0430\\u0440\\u0442\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2021-07-07T14:42:27.209Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Юрисконсульт",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2021-07-07T14:42:37.311Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Деловод",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2021-07-07T14:42:47.969Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Курьер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2021-07-07T14:43:40.940Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Младший юрисконсульт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2021-07-07T14:43:57.698Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Старший юрисконсульт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2021-07-07T14:44:44.077Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Главный юрисконсульт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2021-07-07T14:45:17.202Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Генеральный директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2021-07-07T14:45:31.217Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Коммерческий директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2021-07-07T14:46:35.557Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Руководитель департамента по работе с персоналом",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2021-07-07T14:47:00.992Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Руководитель отдела",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2021-07-07T14:47:55.710Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Финансовый директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2021-07-07T14:48:11.139Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Главный бухгалтер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2021-07-08T07:17:36.422Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Киев,  ул. Полевая, 24 д (7 этаж)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441 \"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2021-07-08T07:31:53.272Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Директор по маркетингу департамента реализации залогового имущества",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2021-07-08T07:33:04.734Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Руководитель департамента по управлению и реализации залогового имущества",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2021-07-08T07:33:57.157Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "специалист департамента по управлению и реализации залогового имущества",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2021-07-08T07:34:05.222Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Специалист департамента по управлению и реализации залогового имущества",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2021-07-08T07:37:27.091Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Руководитель отдела сопровождения судебных споров",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2021-07-08T07:38:15.394Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Руководитель отдела послесудебного взыскания",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2021-07-08T08:27:39.328Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Руководитель отдела по работе с ипотечными кредитами",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2021-07-08T08:28:41.203Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Отдел по работе с ипотечными кредитами",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2021-07-08T08:29:02.656Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Юредический",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2021-07-08T08:29:46.378Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Отдел судебного сопровождения",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u043e\\u0442\\u0434\\u0435\\u043b\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2021-07-08T08:30:21.476Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Отдел послесудебного взыскания",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2021-07-08T09:02:14.504Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2021-07-08T09:06:41.262Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Генеральный директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2021-07-08T09:07:00.832Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Генеральный директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2021-07-08T09:07:16.663Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Коммерческий директор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2021-07-08T10:02:55.791Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Департамент топ менеджмента",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2021-07-08T10:15:43.649Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Отдел топ менеджмента",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2021-07-08T11:17:35.354Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2021-07-08T11:22:23.357Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лукаш Алексей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0418\\u041e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\", \"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u0440\\u0438\\u0435\\u043c\\u0430 \\u043d\\u0430 \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443\", \"Group\", \"Position\", \"Adres\", \"\\u0420\\u0430\\u0431\\u043e\\u0447\\u0438\\u0439 e-mail\", \"\\u0420\\u0430\\u0431\\u043e\\u0447\\u0438\\u0439 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"Leader\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u041b\\u0438\\u0447\\u043d\\u044b\\u0439 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"Viber\", \"Telegram\", \"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2021-07-08T11:27:46.400Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Основатель компании",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2021-07-08T11:37:21.586Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Деминский Сергей Анатольевич",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2021-07-08T11:43:16.286Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Сысын Мария Николаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2021-07-08T11:48:55.852Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Мумриенко Анастасия Сергеевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2021-07-08T12:55:38.073Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Деловодство",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2021-07-08T12:59:25.201Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2021-07-09T06:06:19.124Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Hr\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2021-07-09T06:11:48.110Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2021-07-09T08:24:22.218Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2021-07-09T08:29:56.356Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2021-07-09T08:34:10.436Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2021-07-09T08:35:21.446Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2021-07-09T08:36:25.061Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2021-07-09T08:38:05.631Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2021-07-09T09:00:35.428Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2021-07-09T09:01:27.336Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0441\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2021-07-09T09:21:40.550Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Python developer",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2021-07-09T09:22:13.528Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2021-07-09T12:39:17.140Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Марина",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Hr\", \"Leader\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2021-07-09T12:52:29.690Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Leader\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2021-07-09T13:02:52.470Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Hr\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2021-07-16T13:03:13.311Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Деминский Сергей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2021-07-16T13:10:38.604Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Деминский Сергей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2021-07-16T13:11:14.480Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Деминский Сергей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2021-07-16T13:23:12.523Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2021-07-16T13:32:16.265Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2021-07-16T13:38:40.833Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2021-07-16T13:48:58.315Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лукаш Алексей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2021-07-16T13:48:58.608Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Марина",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2021-07-16T13:48:58.941Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Мумриенко Анастасия Сергеевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2021-07-16T13:48:59.324Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2021-07-16T13:48:59.706Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Сысын Мария Николаевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2021-07-21T06:14:22.448Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2021-07-21T07:52:19.280Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2021-07-21T08:23:22.035Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2021-07-21T08:43:07.814Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2021-07-21T08:43:22.377Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Лучший сотрудник -Года",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2021-07-21T08:43:28.608Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2021-07-21T08:43:37.734Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Лучший сотрудник - Года",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u043e\\u043c\\u0438\\u043d\\u0430\\u0446\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2021-07-21T08:45:08.677Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2021-07-21T08:45:12.266Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Лучший сотрудник - Года",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2021-07-21T10:28:22.052Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Лучший сотрудник - Года",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2021-07-21T10:28:33.187Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2021-07-21T10:28:46.899Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2021-07-21T10:33:20.326Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2021-07-21T12:22:56.133Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2021-07-21T12:23:07.121Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2021-07-21T12:23:17.228Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Лучший сотрудник разарботчик",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2021-07-21T12:23:53.196Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Лучший разарботчик",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u043e\\u043c\\u0438\\u043d\\u0430\\u0446\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2021-07-21T13:43:26.059Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Нотариусы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2021-07-21T13:43:32.843Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Оцещики",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2021-07-21T13:46:32.222Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2021-07-21T13:58:00.536Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u043e\\u0440\\u0433\\u0430\\u043d\\u0438\\u0437\\u0430\\u0446\\u0438\\u0438\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"E-mail\"]}}, {\"added\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"\\u043e\\u0434\\u043d\\u043e \\u0434\\u043e\\u043f \\u043f\\u043e\\u043b\\u0435\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2021-07-21T14:02:14.171Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "ООО Финансовая компания",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2021-07-22T06:15:24.921Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0434\\u0440\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2021-07-22T06:15:46.374Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"dva\"}}, {\"added\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"tree\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2021-07-22T06:15:56.850Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"\\u043e\\u0434\\u043d\\u043e \\u0434\\u043e\\u043f \\u043f\\u043e\\u043b\\u0435\", \"fields\": [\"\\u0417\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044f\"]}}, {\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"dva\", \"fields\": [\"\\u0417\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044f\"]}}, {\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"tree\", \"fields\": [\"\\u0417\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2021-07-22T06:30:54.226Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"4\"}}, {\"added\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \";mfbl;m;lmbl;f\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2021-07-22T07:24:03.419Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Лучший сотрудник 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2021-07-22T07:27:22.575Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2021-07-22T07:29:52.240Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"\\u043e\\u0434\\u043d\\u043e \\u0434\\u043e\\u043f \\u043f\\u043e\\u043b\\u0435\", \"fields\": [\"\\u0421\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2021-07-22T07:32:32.117Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u0430 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2021-07-22T07:32:41.508Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "jxgfjjgxop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2021-07-22T08:18:23.480Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "jxgfjjgxop",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2021-07-22T08:19:17.412Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"4\", \"fields\": [\"\\u0421\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2021-07-22T08:19:31.714Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0414\\u043e\\u043f\\u043e\\u043b\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0435 \\u043f\\u043e\\u043b\\u044f\", \"object\": \"4\", \"fields\": [\"\\u0421\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2021-07-22T11:04:18.314Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Подряддчик - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2021-07-22T11:04:24.888Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Подряддчик - 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2021-07-22T11:04:32.046Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "Подряддчик - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2021-07-22T11:04:39.572Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "6",
+    "object_repr": "Подряддчик - 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2021-07-22T11:04:46.256Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "7",
+    "object_repr": "Подряддчик - 6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2021-07-22T11:25:13.581Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Лучший сотрудник - Месяца",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2021-07-22T11:25:34.307Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Лучший разарботчик",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2021-07-22T13:58:45.495Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "Оценщики",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f \\u043f\\u043e\\u0434\\u0440\\u044f\\u0434\\u043d\\u044b\\u0445 \\u043e\\u0440\\u0433\\u0430\\u043d\\u0438\\u0437\\u0430\\u0446\\u0438\\u0439\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2021-07-22T14:37:33.903Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "DG Finance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2021-07-26T08:35:22.143Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2021-07-26T08:35:35.634Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2021-07-26T08:35:42.550Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2021-07-26T10:46:55.356Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "Новости",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2021-07-26T10:47:08.168Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "Инструкции",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2021-07-26T10:47:29.412Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "3",
+    "object_repr": "Правила компании",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2021-07-26T10:47:35.263Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "Новости",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a \\u0441\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2021-07-26T10:47:35.579Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "Инструкции",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a \\u0441\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2021-07-26T10:47:41.255Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "3",
+    "object_repr": "Правила компании",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a \\u0441\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2021-07-26T10:47:41.576Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "Новости",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0440\\u044f\\u0434\\u043e\\u043a \\u0441\\u043e\\u0440\\u0442\\u0438\\u0440\\u043e\\u0432\\u043a\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2021-07-26T10:49:24.895Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "1",
+    "object_repr": "Posts object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2021-07-26T11:01:42.398Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "1",
+    "object_repr": "DG Finance локальній ресурс",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2021-07-26T13:21:14.374Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лукаш Алексей Анатольевич",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\", \"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2021-07-26T13:21:32.821Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2021-07-26T13:21:43.003Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Марина",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2021-07-26T13:21:56.583Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Мумриенко Анастасия Сергеевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\", \"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2021-07-26T13:22:05.865Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\", \"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2021-07-26T13:22:11.779Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2021-07-26T13:22:22.826Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Сысын Мария Николаевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\", \"\\u0425\\u043e\\u0431\\u0431\\u0438 \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0435\\u0441\\u044b\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2021-07-26T13:41:50.897Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2021-07-26T13:44:07.135Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2021-07-26T13:46:16.128Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Hr\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2021-07-26T13:47:24.981Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Самофал Олег Иванович",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2021-07-26T13:47:40.674Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Соколов Кирилл",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2021-07-26T13:47:51.234Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Сысын Мария Николаевна",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2021-07-26T14:21:57.767Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Голева Марина Юрьевна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u043e\\u044f\\u043d\\u0438\\u0435, \\u0441\\u0442\\u0430\\u0442\\u0443\\u0441\", \"\\u0417\\u0430\\u043c\\u0435\\u043d\\u0430\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Адреса",
+    "content_type": 7,
+    "codename": "add_adres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Адреса",
+    "content_type": 7,
+    "codename": "change_adres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Адреса",
+    "content_type": 7,
+    "codename": "delete_adres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Адреса",
+    "content_type": 7,
+    "codename": "view_adres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Должности",
+    "content_type": 8,
+    "codename": "add_position"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Должности",
+    "content_type": 8,
+    "codename": "change_position"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Должности",
+    "content_type": 8,
+    "codename": "delete_position"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Должности",
+    "content_type": 8,
+    "codename": "view_position"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Статус",
+    "content_type": 9,
+    "codename": "add_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Статус",
+    "content_type": 9,
+    "codename": "change_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Статус",
+    "content_type": 9,
+    "codename": "delete_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Статус",
+    "content_type": 9,
+    "codename": "view_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Отделы",
+    "content_type": 10,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Отделы",
+    "content_type": 10,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Отделы",
+    "content_type": 10,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Отделы",
+    "content_type": 10,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Департаменты",
+    "content_type": 11,
+    "codename": "add_department"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Департаменты",
+    "content_type": 11,
+    "codename": "change_department"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Департаменты",
+    "content_type": 11,
+    "codename": "delete_department"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Департаменты",
+    "content_type": 11,
+    "codename": "view_department"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Сотрудники",
+    "content_type": 12,
+    "codename": "add_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Сотрудники",
+    "content_type": 12,
+    "codename": "change_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Сотрудники",
+    "content_type": 12,
+    "codename": "delete_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Сотрудники",
+    "content_type": 12,
+    "codename": "view_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Про компанию",
+    "content_type": 13,
+    "codename": "add_abouttext"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Про компанию",
+    "content_type": 13,
+    "codename": "change_abouttext"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Про компанию",
+    "content_type": 13,
+    "codename": "delete_abouttext"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Про компанию",
+    "content_type": 13,
+    "codename": "view_abouttext"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add Лучший сотрудник",
+    "content_type": 14,
+    "codename": "add_bestworker"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change Лучший сотрудник",
+    "content_type": 14,
+    "codename": "change_bestworker"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete Лучший сотрудник",
+    "content_type": 14,
+    "codename": "delete_bestworker"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view Лучший сотрудник",
+    "content_type": 14,
+    "codename": "view_bestworker"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Категория подрядчиков",
+    "content_type": 15,
+    "codename": "add_contractorscategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Категория подрядчиков",
+    "content_type": 15,
+    "codename": "change_contractorscategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Категория подрядчиков",
+    "content_type": 15,
+    "codename": "delete_contractorscategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Категория подрядчиков",
+    "content_type": 15,
+    "codename": "view_contractorscategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Подрядчики",
+    "content_type": 16,
+    "codename": "add_contractors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Подрядчики",
+    "content_type": 16,
+    "codename": "change_contractors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Подрядчики",
+    "content_type": 16,
+    "codename": "delete_contractors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Подрядчики",
+    "content_type": 16,
+    "codename": "view_contractors"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add Дополнительные поля",
+    "content_type": 17,
+    "codename": "add_aditionalfield"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change Дополнительные поля",
+    "content_type": 17,
+    "codename": "change_aditionalfield"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete Дополнительные поля",
+    "content_type": 17,
+    "codename": "delete_aditionalfield"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view Дополнительные поля",
+    "content_type": 17,
+    "codename": "view_aditionalfield"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add Кадровые документы",
+    "content_type": 18,
+    "codename": "add_hrdocs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change Кадровые документы",
+    "content_type": 18,
+    "codename": "change_hrdocs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete Кадровые документы",
+    "content_type": 18,
+    "codename": "delete_hrdocs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view Кадровые документы",
+    "content_type": 18,
+    "codename": "view_hrdocs"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add Разделы",
+    "content_type": 19,
+    "codename": "add_blogcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change Разделы",
+    "content_type": 19,
+    "codename": "change_blogcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete Разделы",
+    "content_type": 19,
+    "codename": "delete_blogcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view Разделы",
+    "content_type": 19,
+    "codename": "view_blogcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add Статьи",
+    "content_type": 20,
+    "codename": "add_posts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change Статьи",
+    "content_type": 20,
+    "codename": "change_posts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete Статьи",
+    "content_type": 20,
+    "codename": "delete_posts"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view Статьи",
+    "content_type": 20,
+    "codename": "view_posts"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$fmAJ2oSErgZMbOGwBxYcLS$8wxDiM+/CAUOks58jqOtDyPv6w9pTn90/V2GXwcSiu8=",
+    "last_login": "2021-07-26T13:42:57.363Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-07-07T11:13:33.778Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "adres"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "position"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "status"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "department"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "staff"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "about",
+    "model": "abouttext"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "wokerlist",
+    "model": "bestworker"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "contractors",
+    "model": "contractorscategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "contractors",
+    "model": "contractors"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "contractors",
+    "model": "aditionalfield"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "fileserv",
+    "model": "hrdocs"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "blog",
+    "model": "blogcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "blog",
+    "model": "posts"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2r3tqtm3y3bqhp44prfu84sel9r232vc",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1mnK:YwkyMGBo5mEd1rcMbsg9h9g9y4Qwk3Y3dw0jFBPT4kY",
+    "expire_date": "2021-07-23T09:27:38.620Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5bt612il01g8piio0xxsj7g6lpit252g",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1n2D:4lu7UqgYj4-sdxKkRiDBk5kUuxbHMg5KfgescCLEMMY",
+    "expire_date": "2021-07-23T09:43:01.816Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5gwk47fhpv7o3ugezijbgybbfimz6qtp",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m2sAD:t7P-jXROVlQaW9_dKrfPbpP5i8Tymlh5QAPDiikwDDM",
+    "expire_date": "2021-07-26T09:23:45.966Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5z1n76qartym5s9t1u9xbszqb1byxl8a",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m168Q:lXyjpnugOPeVFjqIav7xAAR_3VFGruArL5Z2PR-atGY",
+    "expire_date": "2021-07-21T11:54:34.037Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6bfiqvqlm79bfp074u97v9j5zsvofzdw",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1TXl:tMZFJpgIDZ6xjlF141wp-31HrODnBc-vxl-UOJNnD80",
+    "expire_date": "2021-07-22T12:54:17.360Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "86m3ewluqyhxtdw499uwnlqs0dzsgy39",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1n2A:O_u0fgJeBVMBrbnLF_tNKwaa4fGICooFFH4kMc3xYx4",
+    "expire_date": "2021-07-23T09:42:58.697Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8lfzs1boeq46jbqmo8dibfehrhrfpxgx",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m15VO:Ty-OofwOgZu11d9N8vsv2FWUwsAdkiPqDYStubtbauk",
+    "expire_date": "2021-07-21T11:14:14.906Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8msef50vmupd57qlvwt54eu5fan4ftu2",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m4KY2:r7spBZiVFZVr6w4l-P3D4xM5Dpim49DNqNel01A-XAk",
+    "expire_date": "2021-07-30T09:54:22.240Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "eluvhz6u6paddk9g6df3i0phyor1e032",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m65UW:6QEEtJY1hU8YpL1mMYFPdS9PDBSV6YUCmGq3fd9X7T0",
+    "expire_date": "2021-08-04T06:14:00.697Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gwy6i8v7bvmv2t62oldi2oqoplbth46u",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m18Rp:PrQBmtyJY3oqjV_bfPN9L7vUxc9gezZMfPRwtDBeWIs",
+    "expire_date": "2021-07-21T14:22:45.023Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hmyq0sihxqzv8qxdapfqrk276ur4dghm",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1Njh:fIJkMNwIKLL8q06ZcZVRejkei4N6VLIiUfCrXo7TAvk",
+    "expire_date": "2021-07-22T06:42:13.217Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rxlrq7pioh2qkwq0mlism3jwltemehfv",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m80sj:Oxn8EMTXIEdWMh_4Zs5mOg8wQ5aPN65jKDfqbRYhA1o",
+    "expire_date": "2021-08-09T13:42:57.534Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vqx35wc9yw3tz8fp8s0irogdp2dazli8",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSEg0FtcuvcbyH2gVE1JSrsy_ruSdKHbmTnnpRJua0lby0uaRJ2UVYdfRsiPPHchd5xvVXOd12Ui3RO926YvVfLzvLd_BwVb-a4zA5Ach8wSwDFYFjMGE9kiO2Hy2Knx7AAgxOEqEaNQGD0ZcgOo9wf-gzg8:1m1Ner:_H_UNMNA1MQGSzZ4d40MNfSU3afL3LAhbhw4AO1AdB4",
+    "expire_date": "2021-07-22T06:37:13.001Z"
+  }
+},
+{
+  "model": "wokerlist.status",
+  "pk": 1,
+  "fields": {
+    "name": "В работе"
+  }
+},
+{
+  "model": "wokerlist.status",
+  "pk": 2,
+  "fields": {
+    "name": "В отпуске"
+  }
+},
+{
+  "model": "wokerlist.status",
+  "pk": 3,
+  "fields": {
+    "name": "Уволен"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 1,
+  "fields": {
+    "name": "Юрисконсульт"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 2,
+  "fields": {
+    "name": "Адвокат"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 3,
+  "fields": {
+    "name": "Деловод"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 4,
+  "fields": {
+    "name": "Курьер"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 5,
+  "fields": {
+    "name": "Младший юрисконсульт"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 6,
+  "fields": {
+    "name": "Старший юрисконсульт"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 7,
+  "fields": {
+    "name": "Главный юрисконсульт"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 8,
+  "fields": {
+    "name": "Генеральный директор"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 9,
+  "fields": {
+    "name": "Коммерческий директор"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 10,
+  "fields": {
+    "name": "Руководитель департамента по работе с персоналом"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 11,
+  "fields": {
+    "name": "Руководитель отдела"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 12,
+  "fields": {
+    "name": "Финансовый директор"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 13,
+  "fields": {
+    "name": "Главный бухгалтер"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 14,
+  "fields": {
+    "name": "Директор по маркетингу департамента реализации залогового имущества"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 15,
+  "fields": {
+    "name": "Руководитель департамента по управлению и реализации залогового имущества"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 16,
+  "fields": {
+    "name": "Специалист департамента по управлению и реализации залогового имущества"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 17,
+  "fields": {
+    "name": "Руководитель отдела сопровождения судебных споров"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 18,
+  "fields": {
+    "name": "Руководитель отдела послесудебного взыскания"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 19,
+  "fields": {
+    "name": "Руководитель отдела по работе с ипотечными кредитами"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 20,
+  "fields": {
+    "name": "Основатель компании"
+  }
+},
+{
+  "model": "wokerlist.position",
+  "pk": 21,
+  "fields": {
+    "name": "Python developer"
+  }
+},
+{
+  "model": "wokerlist.department",
+  "pk": 1,
+  "fields": {
+    "name": "Юридический"
+  }
+},
+{
+  "model": "wokerlist.department",
+  "pk": 2,
+  "fields": {
+    "name": "Генеральный директор"
+  }
+},
+{
+  "model": "wokerlist.department",
+  "pk": 3,
+  "fields": {
+    "name": "Коммерческий директор"
+  }
+},
+{
+  "model": "wokerlist.department",
+  "pk": 4,
+  "fields": {
+    "name": "Департамент топ менеджмента"
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 1,
+  "fields": {
+    "name": "Отдел судебного сопровождения",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 2,
+  "fields": {
+    "name": "HR",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 3,
+  "fields": {
+    "name": "Отдел по работе с ипотечными кредитами",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 4,
+  "fields": {
+    "name": "Отдел послесудебного взыскания",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 5,
+  "fields": {
+    "name": "Генеральный директор",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 6,
+  "fields": {
+    "name": "Отдел топ менеджмента",
+    "department": 4
+  }
+},
+{
+  "model": "wokerlist.group",
+  "pk": 7,
+  "fields": {
+    "name": "Деловодство",
+    "department": 1
+  }
+},
+{
+  "model": "wokerlist.adres",
+  "pk": 2,
+  "fields": {
+    "name": "Киев, ул. Полевая, 24 д (6 этаж)"
+  }
+},
+{
+  "model": "wokerlist.adres",
+  "pk": 3,
+  "fields": {
+    "name": "Киев,  И. Сикорского, 8"
+  }
+},
+{
+  "model": "wokerlist.adres",
+  "pk": 4,
+  "fields": {
+    "name": "Киев,  ул. Полевая, 24 д (7 этаж)"
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 1,
+  "fields": {
+    "name": "Лукаш Алексей Анатольевич",
+    "b_date": "2021-08-16",
+    "start_work_date": "2019-07-15",
+    "group": 6,
+    "position": 8,
+    "adres": 4,
+    "w_mail": "o.lukash@dgfinance.com.ua",
+    "p_mail": null,
+    "w_tel": "067 402 43 03",
+    "с_tel": null,
+    "p_tel": "067 402 43 03",
+    "viber": "067 402 43 03",
+    "telegram": "067 402 43 03",
+    "skype": null,
+    "leader": 4,
+    "hr": null,
+    "hobby": "<p>Плаванье, кулинария</p>",
+    "promotion": "top",
+    "avatar": "",
+    "work_status": "InWork",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 2,
+  "fields": {
+    "name": "Марина",
+    "b_date": "2021-07-07",
+    "start_work_date": "2021-07-07",
+    "group": 2,
+    "position": 1,
+    "adres": 2,
+    "w_mail": null,
+    "p_mail": null,
+    "w_tel": null,
+    "с_tel": null,
+    "p_tel": null,
+    "viber": null,
+    "telegram": null,
+    "skype": null,
+    "leader": 3,
+    "hr": null,
+    "hobby": "",
+    "promotion": "hr",
+    "avatar": "",
+    "work_status": "InWork",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 3,
+  "fields": {
+    "name": "Голева Марина Юрьевна",
+    "b_date": "2021-05-13",
+    "start_work_date": "2020-11-02",
+    "group": 6,
+    "position": 10,
+    "adres": 4,
+    "w_mail": "m.goleva@dgfinance.com.ua",
+    "p_mail": null,
+    "w_tel": "044-299-83-96",
+    "с_tel": "098 96 77 934",
+    "p_tel": null,
+    "viber": null,
+    "telegram": null,
+    "skype": null,
+    "leader": 1,
+    "hr": null,
+    "hobby": "",
+    "promotion": "top",
+    "avatar": "photo/sotrudniki/IMG_6138_01.jpg",
+    "work_status": "vocation",
+    "replacement_employee": 6
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 4,
+  "fields": {
+    "name": "Деминский Сергей Анатольевич",
+    "b_date": "2021-06-05",
+    "start_work_date": "2011-11-01",
+    "group": 6,
+    "position": 20,
+    "adres": 4,
+    "w_mail": "dsa@dgfinance.com.ua",
+    "p_mail": null,
+    "w_tel": null,
+    "с_tel": "050 462 75 90",
+    "p_tel": "050 462 75 90",
+    "viber": "050 462 75 90",
+    "telegram": "050 462 75 90",
+    "skype": null,
+    "leader": null,
+    "hr": null,
+    "hobby": "",
+    "promotion": "top",
+    "avatar": "",
+    "work_status": "InWork",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 5,
+  "fields": {
+    "name": "Сысын Мария Николаевна",
+    "b_date": "2021-10-05",
+    "start_work_date": "2015-03-23",
+    "group": 3,
+    "position": 19,
+    "adres": 4,
+    "w_mail": "m.sysyn@dgfinance.com.ua",
+    "p_mail": null,
+    "w_tel": null,
+    "с_tel": "0968141315",
+    "p_tel": "0968141315",
+    "viber": "0968141315",
+    "telegram": "0968141315",
+    "skype": null,
+    "leader": 1,
+    "hr": null,
+    "hobby": "<p>Рисование</p>",
+    "promotion": "top",
+    "avatar": "",
+    "work_status": "wfh",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 6,
+  "fields": {
+    "name": "Мумриенко Анастасия Сергеевна",
+    "b_date": "2021-08-12",
+    "start_work_date": "2018-03-10",
+    "group": 1,
+    "position": 6,
+    "adres": 4,
+    "w_mail": "a.mumrienko@dgfinance.com.ua",
+    "p_mail": null,
+    "w_tel": "0635361390",
+    "с_tel": "0635361390",
+    "p_tel": "0635361390",
+    "viber": "0635361390",
+    "telegram": "0635361390",
+    "skype": null,
+    "leader": 1,
+    "hr": null,
+    "hobby": "<p>Туризм, настольный тенис, волейбол, английский язык, кулинария</p>",
+    "promotion": "loos",
+    "avatar": "",
+    "work_status": "InWork",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 7,
+  "fields": {
+    "name": "Самофал Олег Иванович",
+    "b_date": "2021-07-10",
+    "start_work_date": "2021-03-04",
+    "group": 7,
+    "position": 4,
+    "adres": 4,
+    "w_mail": null,
+    "p_mail": null,
+    "w_tel": null,
+    "с_tel": "0673868898",
+    "p_tel": "0665470528",
+    "viber": "0665470528",
+    "telegram": null,
+    "skype": null,
+    "leader": 5,
+    "hr": null,
+    "hobby": "<p>Велоспорт, просмотр фильмов, чтение книг</p>",
+    "promotion": "loos",
+    "avatar": "",
+    "work_status": "InWork",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.staff",
+  "pk": 8,
+  "fields": {
+    "name": "Соколов Кирилл",
+    "b_date": "2021-07-10",
+    "start_work_date": "2021-07-09",
+    "group": 6,
+    "position": 21,
+    "adres": 2,
+    "w_mail": null,
+    "p_mail": null,
+    "w_tel": null,
+    "с_tel": null,
+    "p_tel": null,
+    "viber": null,
+    "telegram": null,
+    "skype": null,
+    "leader": 1,
+    "hr": null,
+    "hobby": "<ul>\r\n\t<li>Скалолазание</li>\r\n\t<li><strong>Вейк</strong></li>\r\n\t<li>Сноуборд</li>\r\n</ul>",
+    "promotion": "loos",
+    "avatar": "photo/sotrudniki/IMG_8696.jpg",
+    "work_status": "vocation",
+    "replacement_employee": null
+  }
+},
+{
+  "model": "wokerlist.bestworker",
+  "pk": 4,
+  "fields": {
+    "nominate": "Лучший сотрудник 5",
+    "idSort": 0,
+    "staff": [
+      4,
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "about.abouttext",
+  "pk": 1,
+  "fields": {
+    "title": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "description": "<p>динамично развивается, укрепляет свои позиции на рынке и формирует расширенную региональную сеть в областных центрах и крупных городах Украины.</p>\r\n\r\n<p>Наша компания предоставляет услуги по всей территории Украины и работает исключительно в правовом поле действующего законодательства Украины.</p>\r\n\r\n<p>Нам доверяют: Акционерное общество &laquo;ОТП БАНК&raquo;, Акционерное общество &laquo;Райффайзен Банк Аваль&raquo;, Акционерное общество &laquo;Альфа-Банк&raquo;, Акционерное общество &laquo;Укрсиббанк&raquo;, Акционерное общество &quot;Первый Украинский Международный Банк&quot;.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Организационная структура и бизнес процессы построены на основе непрерывного совершенствования механизмов взыскания с использованием инновационных технол<em>огий и передового</em> опыта.</p>\r\n\r\n<p>Поддержку всех процессов компании обеспечивает уникальное программное решение, позволяющее проводить интеллектуальный распределение и управление звонками, построение алгоритмов диалогов с клиентами, автономную рассылку sms-сообщений и, непрерывный мониторинг финансовых и информационных потоков.</p>"
+  }
+},
+{
+  "model": "contractors.contractorscategory",
+  "pk": 1,
+  "fields": {
+    "category": "Нотариусы"
+  }
+},
+{
+  "model": "contractors.contractorscategory",
+  "pk": 2,
+  "fields": {
+    "category": "Оценщики"
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 1,
+  "fields": {
+    "last_edit": "2021-07-22T08:19:31.709Z",
+    "title": "ООО «Финансовая компания «Доверие и Гарантия»",
+    "category": 2,
+    "tel": "+38 (000) 000 00 00",
+    "email": "support@anticollect.org",
+    "adr": "jdsopmvmxpvmlx"
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 2,
+  "fields": {
+    "last_edit": "2021-07-21T14:02:14.167Z",
+    "title": "ООО Финансовая компания",
+    "category": 1,
+    "tel": "+38 (000) 000 00 00",
+    "email": "p.s.vlad2000@ukr.net",
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 3,
+  "fields": {
+    "last_edit": "2021-07-22T11:04:18.291Z",
+    "title": "Подряддчик - 2",
+    "category": 1,
+    "tel": null,
+    "email": null,
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 4,
+  "fields": {
+    "last_edit": "2021-07-22T11:04:24.876Z",
+    "title": "Подряддчик - 3",
+    "category": 1,
+    "tel": null,
+    "email": null,
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 5,
+  "fields": {
+    "last_edit": "2021-07-22T11:04:32.032Z",
+    "title": "Подряддчик - 4",
+    "category": 2,
+    "tel": null,
+    "email": null,
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 6,
+  "fields": {
+    "last_edit": "2021-07-22T11:04:39.563Z",
+    "title": "Подряддчик - 5",
+    "category": 1,
+    "tel": null,
+    "email": null,
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.contractors",
+  "pk": 7,
+  "fields": {
+    "last_edit": "2021-07-22T11:04:46.250Z",
+    "title": "Подряддчик - 6",
+    "category": 2,
+    "tel": null,
+    "email": null,
+    "adr": ""
+  }
+},
+{
+  "model": "contractors.aditionalfield",
+  "pk": 1,
+  "fields": {
+    "name": "одно доп поле",
+    "valuefield": "3121",
+    "idSort": 8,
+    "contractors": 1
+  }
+},
+{
+  "model": "contractors.aditionalfield",
+  "pk": 2,
+  "fields": {
+    "name": "dva",
+    "valuefield": "2131",
+    "idSort": 1,
+    "contractors": 1
+  }
+},
+{
+  "model": "contractors.aditionalfield",
+  "pk": 3,
+  "fields": {
+    "name": "tree",
+    "valuefield": "21312",
+    "idSort": 2,
+    "contractors": 1
+  }
+},
+{
+  "model": "contractors.aditionalfield",
+  "pk": 4,
+  "fields": {
+    "name": "4",
+    "valuefield": "232",
+    "idSort": 1,
+    "contractors": 1
+  }
+},
+{
+  "model": "contractors.aditionalfield",
+  "pk": 5,
+  "fields": {
+    "name": ";mfbl;m;lmbl;f",
+    "valuefield": "43874",
+    "idSort": 0,
+    "contractors": 1
+  }
+},
+{
+  "model": "fileserv.hrdocs",
+  "pk": 1,
+  "fields": {
+    "name": "DG Finance",
+    "date_create": "2021-07-22T14:37:33.881Z",
+    "filedoc": "documents/hr/Doc10.docx"
+  }
+},
+{
+  "model": "blog.blogcategory",
+  "pk": 1,
+  "fields": {
+    "category": "Новости",
+    "slug": "novosti",
+    "idSort": 0
+  }
+},
+{
+  "model": "blog.blogcategory",
+  "pk": 2,
+  "fields": {
+    "category": "Инструкции",
+    "slug": "instrukcii",
+    "idSort": 2
+  }
+},
+{
+  "model": "blog.blogcategory",
+  "pk": 3,
+  "fields": {
+    "category": "Правила компании",
+    "slug": "pravila-kompanii",
+    "idSort": 1
+  }
+},
+{
+  "model": "blog.posts",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "DG Finance локальній ресурс",
+    "slug": "dg-finance-lokalnij-resurs",
+    "created": "2021-07-26T10:49:24.870Z",
+    "edited": "2021-07-26T11:01:42.395Z",
+    "text": "<p>Этот текст говорит что у нас появился новый локальный ресурс на котором можно ознакомиться с правила контактами и новостями</p>\r\n\r\n<p><img alt=\"\" src=\"/media/image_upload/2021/07/26/142.jpg\" style=\"height:1071px; width:1600px\" /></p>"
+  }
+}
+]
