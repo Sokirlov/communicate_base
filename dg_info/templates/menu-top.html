@@ -12,6 +12,16 @@
           active text-uppercase text-decoration-underline
           {% endif %}" aria-current="page" href="{% url "about:company-info" %}">О компании</a>
                 </li>
+            <li class="nav-item">
+                    <a class="nav-link {% if 'graphic' in request.path %}
+          active text-uppercase text-decoration-underline
+          {% endif %}" aria-current="page" href="{% url "tmp" %}">Структура</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if 'blog' in request.path %}
+          active text-uppercase text-decoration-underline
+          {% endif %}" aria-current="page" href="{% url "blog:main" %}">Статьи</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link {% if 'adr' in request.path %}
           active text-uppercase text-decoration-underline

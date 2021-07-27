@@ -4,7 +4,6 @@ from django.views.generic.detail import DetailView
 from .models import Status, Position, Department, Group, Adres, Staff, BestWorker
 import datetime
 from datetime import timedelta, date
-
 today = datetime.date.today()
 
 
@@ -53,3 +52,10 @@ class BestWorkerView(ListView):
     context_object_name = 'bestwokers'
     queryset = BestWorker.objects.all()
     template_name = 'wokerlist/best.html'
+
+class Structure(ListView):
+    model = Staff
+    slug_field = 'id'
+    context_object_name = 'structure'
+    template_name = 'wokerlist/structure.html'
+    queryset = Staff.objects.all()

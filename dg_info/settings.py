@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'about',
     'contractors',
     'fileserv',
+    'blog',
 ]
 
 MIDDLEWARE = [

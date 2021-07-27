@@ -4,7 +4,7 @@
 {% block content %}
     <div class="container-fluid d-flex flex-column">
         <div class="row">
-            <div class="col-10"><h1 class="display-5 text-primary">{{ staff.name }}</h1></div>
+            <div class="col-10"><h1 class="display-6 text-primary">{{ staff.name }}</h1></div>
             <div class="col align-self-end {% if 'InWork' in staff.work_status %} text-success fw-bold {% else %} text-danger{% endif %}">
                 {% if staff.work_status %}
                 {{ staff.get_work_status_display }}
@@ -18,7 +18,7 @@
             </div>
             <div class="col">
                 {% if staff.replacement_employee %}
-                <strong>Замена:</strong>
+                <strong>Временно и/о:</strong>
                      <a href="/adr/{{ staff.replacement_employee.group.id }}/{{ staff.replacement_employee.id }}/" >{{ staff.replacement_employee }}</a>
 {#                    {{ staff.replacement_employee }}#}
                 {% endif %}

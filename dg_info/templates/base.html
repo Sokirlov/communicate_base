@@ -5,12 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <title>DG Finance - {% block title %}{% endblock %}</title>
-    {% block header %}{% endblock %}
+
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "css/bootstrap-grid.css" %}" rel="stylesheet">
     <link href="{% static "css/bootstrap-reboot.css" %}" rel="stylesheet">
     <link href="{% static "css/bootstrap-utilities.css" %}" rel="stylesheet">
     <script src="{% static "js/bootstrap.min.js" %}" rel="script"></script>
+{% block header %}{% endblock %}
 </head>
 <body>
 {% include "menu-top.html" %}
@@ -19,8 +20,11 @@
 <div class="row">
 {#    <div class="col border-end top-0 bottom-0 ps-4 bg-light" id="left-menu" style="min-height: 100vh;"> &nbsp;#}
         {% include "menu-left.html" %}
+{#        {% if leftmenu %}#}
+            {% block leftmenu %}{% endblock %}
+{#        {% endif %}#}
 {#    </div>#}
-    <div class="col " id="contant" style="min-height: calc(100vh - 63px);">
+    <div class="col overflow-hidden" id="contant" style="min-height: calc(100vh - 63px);">
         {% block content %}{% endblock %}
     </div>
 </div>

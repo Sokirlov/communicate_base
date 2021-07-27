@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load wokerlist_tags %}
+{% block leftmenu %}
+
+    <div class="col col-3 border-end top-0 bottom-0 ps-4 bg-light" id="left-menu" style="min-height: 100vh;">
+        {% if l_menu %}
+{#            <H2 class="text-center text-uppercase mt-5 text-muted">Категория </H2>#}
+            <div class="container d-flex mt-3 flex-column">
+                {% for main in l_menu %}
+                    <a href="{{ main.get_absolute_url }}"
+                       class="btn-outline-primary w-100 p-3 border-bottom text-center">{{ main.category }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+{% block content %}
+
+{#    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100 align-self-stretch ">#}
+{#        Подрядчики</h1>#}
+    <div class="d-flex flex-column align-items-center">
+
+            {% for p in post %}
+                    <div class="card p-5 m-1">
+                    <h4>{{ p.name }}</h4>
+                        <p>{{ p.text|safe|escape|truncatewords:20 }}</p>
+                        <a class="text-decoration-none" href="{{ p.get_absolute_url }}">Подробнее</a>
+                    </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+

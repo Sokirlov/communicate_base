@@ -1,4 +1,5 @@
 from django.contrib import admin
+# from .forms import RecipeForm
 from .models import Status, Position, Department, Group, Adres, Staff, BestWorker
 
 
@@ -52,6 +53,8 @@ class StaffAdmin(admin.ModelAdmin):
     list_filter = ['start_work_date', 'group', 'adres', ]
     search_fields = ['name',]
     readonly_fields = ('image_tag',)
+    autocomplete_fields = ['replacement_employee']
+    # filter_horizontal = ('replacement_employee',)
     fieldsets = (
         ('Разработано Sokolov for DG Finance', {'fields':
              (('name', 'promotion',  'start_work_date',),
@@ -75,9 +78,15 @@ admin.site.register(Staff, StaffAdmin)
 
 
 class BestWorkerAdmin(admin.ModelAdmin):
+
     list_display = ('id', 'idSort', 'nominate',)
     list_display_links = ('nominate',)
     list_editable = ('idSort',)
+    filter_horizontal = ('staff',)
+    fieldsets = (
+        ('Разработано Sokolov for DG Finance', {'fields':
+                                                    ('nominate', 'idSort', 'staff',)}
+         ),)
     # list_filter = ['pub_date']
     # search_fields = ['question_text']
 admin.site.register(BestWorker, BestWorkerAdmin)

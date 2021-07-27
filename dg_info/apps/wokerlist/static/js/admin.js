@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#id_work_status').change(function() {
         let sel = $('#id_work_status option:selected').html()
         console.log(sel);
-        if(sel === 'В отпуске'){
+        if(sel != 'В работе'){
             $('#id_replacement_employee').prop('disabled', false);
             console.log($('#id_replacement_employee option:selected').html());
         }else{

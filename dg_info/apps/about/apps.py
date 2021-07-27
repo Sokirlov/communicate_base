@@ -4,4 +4,4 @@ from django.apps import AppConfig
 class AboutConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'about'
-    verbose_name = '1. Про компаниию'
+    verbose_name = '9. Про компаниию'

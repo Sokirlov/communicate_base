@@ -10,7 +10,7 @@ class Status(models.Model):
 
     class Meta:
         verbose_name = 'Статус'
-        verbose_name_plural = 'Статусы '
+        verbose_name_plural = '2.7. Статусы'
     def __str__(self):
         return self.name
 
@@ -18,8 +18,8 @@ class Position(models.Model):
     name = models.CharField('Должность', max_length=300)
 
     class Meta:
-        verbose_name = 'Должности'
-        verbose_name_plural = 'Должность'
+        verbose_name = 'Должность'
+        verbose_name_plural = '2.6. Должности'
 
     def __str__(self):
         return self.name
@@ -29,7 +29,7 @@ class Department(models.Model):
 
     class Meta:
         verbose_name = 'Департаменты'
-        verbose_name_plural = 'Департамент'
+        verbose_name_plural = '2.3. Департаменты'
     def __str__(self):
         return self.name
 
@@ -38,8 +38,8 @@ class Group(models.Model):
     department = models.ForeignKey(Department, on_delete=models.PROTECT)
 
     class Meta:
-        verbose_name = 'Отделы'
-        verbose_name_plural = 'Отдел'
+        verbose_name = 'Отдел'
+        verbose_name_plural = '2.4. Отделы'
 
     def __str__(self):
         return self.name
@@ -48,8 +48,8 @@ class Adres(models.Model):
     name = models.CharField('Адрес ', max_length=300)
 
     class Meta:
-        verbose_name = 'Адреса'
-        verbose_name_plural = 'Адрес'
+        verbose_name = 'Адрес'
+        verbose_name_plural = '2.5. Адреса'
 
     def __str__(self):
         return self.name
@@ -102,8 +102,8 @@ class Staff(models.Model):
 
     class Meta:
         ordering = ['name']
-        verbose_name = 'Сотрудника'
-        verbose_name_plural = 'Сотрудники'
+        verbose_name = 'Сотрудник'
+        verbose_name_plural = '2.2. Сотрудники'
 
     def __str__(self):
         return self.name
@@ -116,7 +116,7 @@ class BestWorker(models.Model):
     class Meta:
         ordering = ['idSort']
         verbose_name = 'Лучший сотрудник'
-        verbose_name_plural = 'Лучший сотрудник'
+        verbose_name_plural = '2.1. Лучшие сотрудники'
 
     def __str__(self):
         return self.nominate
