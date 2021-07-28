@@ -21,7 +21,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'dgf',
             'USER' : 'root',
-            'PASSWORD' : 'root',
+            'PASSWORD' : '',
             'default-character-set' : 'utf8',
             'HOST' : 'localhost',
             # 'PORT' : '5432',

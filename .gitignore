@@ -1,3 +1,4 @@
 /static/
 migrations/
 venv/
+local_conf.py
