@@ -26,8 +26,13 @@
         </div>
         <div class="row border-bottom border-primary">
             <div class="col-4">
-{#                <img src="{% static '/media/'+ staff.avatar %}">#}
-                <img src="/media/{{ staff.avatar }}" width="100%" class="my-2">
+                {#                <img src="{% static '/media/'+ staff.avatar %}">#}
+                {% if staff.avatar %}
+                    <img src="/media/{{ staff.avatar }}" width="100%" class="my-2">
+                {% else %}
+                    <img src="{% static 'no_photo.jpg' %}" width="100%" class="my-2">
+                {% endif %}
+
             </div>
             <div class="col border-start border-primary pb-3">
                 <h3 class="display-6 text-info">Контакты</h3>
@@ -40,24 +45,15 @@
                         Не нуждается
                     {% endif %}
                 </div>
-                <div><strong>Рабочая почта:</strong>
-                    {% if staff.w_mail %}<a href="mailto:{{ staff.w_mail }}">{{ staff.w_mail }}</a>
-                    {% else %}
-                        ----
-                    {% endif %}
-                </div>
-                <div><strong>Рабочий телефон:</strong>
-                    {% if staff.w_tel %}<a href="tel:+38{{ staff.w_tel }}"> {{ staff.w_tel }}</a>
-                    {% else %}
-                        ----
-                    {% endif %}
-                </div>
-                <div><strong>Корпоративный номер:</strong>
-                    {% if staff.с_tel %}<a href="tel:+38{{ staff.с_tel }}">{{ staff.с_tel }}</a>
-                    {% else %}
-                        ----
-                    {% endif %}
-                </div>
+                {% if staff.w_mail %}<div><strong>Рабочая почта:</strong>
+                    <a href="mailto:{{ staff.w_mail }}">{{ staff.w_mail }}</a>
+                </div>{% endif %}
+                {% if staff.w_tel %}<div><strong>Рабочий телефон:</strong>
+                    <a href="tel:+38{{ staff.w_tel }}"> {{ staff.w_tel }}</a>
+                </div>{% endif %}
+                {% if staff.с_tel %}<div><strong>Корпоративный номер:</strong>
+                    <a href="tel:+38{{ staff.с_tel }}">{{ staff.с_tel }}</a>
+                </div>{% endif %}
                 <div><strong>HR:</strong>
                     {% if staff.hr %}
                             <a href="/adr/{{ staff.hr.group.id }}/{{ staff.hr.id }}/" >{{ staff.hr }}</a>
@@ -65,13 +61,9 @@
                         ----
                     {% endif %}
                 </div>
-                <div><strong>Принят в компанию:</strong>
-                    {% if staff.start_work_date %}{{ staff.start_work_date }}
-                    {% else %}
-                        всегда тут был :)
-                    {% endif %}
-                </div>
-
+                {% if staff.start_work_date %}<div><strong>Принят в компанию:</strong>
+                    {{ staff.start_work_date }}
+                </div>{% endif %}
             </div>
         </div>
         <div class="row">

@@ -62,9 +62,9 @@ class Staff(models.Model):
         ('hr', 'HR'),
     )
     STATUS_CHOISE = (
-        ('InWork', 'В работе'),
+        ('InWork', 'На работе'),
         ('vocation', 'В отпуске'),
-        ('seek', 'На большничном'),
+        ('seek', 'На больничном'),
         ('wfh', 'Работает с дома'),
     )
     name = models.CharField('ФИО сотрудника', max_length=500)
