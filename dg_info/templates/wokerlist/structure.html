@@ -16,7 +16,7 @@
             // For each orgchart box, provide the name, manager, and tooltip to show.
             data.addRows([
                 {% for st in structure %}
-                    [ {'v': '{{ st.name }}', 'f': '<p><a class="{% if st.work_status != "InWork" %}text-danger{% endif %}  btn" href="{{ st.get_absolute_url }}">{{ st.name }}</a><br><sup>{{ st.position }}</sup></p> '}, '{% if st.leader %}{{ st.leader }}{% endif %}','{{ st.get_work_status_display }}',],
+                    [ {'v': '{{ st.name }}', 'f': '<p><a class="{% if st.work_status != "InWork" %}text-danger{% endif %} " href="{{ st.get_absolute_url }}">{{ st.name }}</a><br><sup>{{ st.position }}</sup></p> '}, '{% if st.leader %}{{ st.leader }}{% endif %}','{{ st.get_work_status_display }}',],
                 {% endfor %}
 
                 {#[{'v': 'Mike','f': 'Mike<div style="color:red; font-style:italic">President</div>'},'', 'The President'],#}
