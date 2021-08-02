@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django.utils.safestring import  mark_safe
 from django.urls import reverse
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -135,8 +136,10 @@ class StructureStyle(models.Model):
         return self.name
 
 class StuctureLeader(models.Model):
+    def limit_choices_leaders():
+        return Q(promotion='top')| Q(promotion='hr')
     name = models.CharField('Техническое название', max_length=50, help_text='1-2 слова, максимальная длина 50 симоволов')
-    leader = models.ManyToManyField(Staff,limit_choices_to={'promotion': 'top'}, verbose_name='Руководитель')
+    leader = models.ManyToManyField(Staff,limit_choices_to=limit_choices_leaders, verbose_name='Руководитель')
     changeStyle = models.ForeignKey(StructureStyle, on_delete=models.CASCADE, verbose_name='Выберете стиль')
 
     class Meta:
