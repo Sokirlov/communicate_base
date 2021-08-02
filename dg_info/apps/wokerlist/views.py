@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from .models import Status, Position, Department, Group, Adres, Staff, BestWorker
+from .models import Status, Position, Department, Group, Adres, Staff, BestWorker, StuctureLeader
 import datetime
 from datetime import timedelta, date
 today = datetime.date.today()
@@ -59,3 +59,16 @@ class Structure(ListView):
     context_object_name = 'structure'
     template_name = 'wokerlist/structure.html'
     queryset = Staff.objects.all()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # allStuctureLeader.objects.all()
+
+        leaderArrey = []
+        for i in StuctureLeader.objects.all():
+            for j in i.leader.all():
+                numOfLeader = Staff.objects.filter(name__lt=j).count()
+                leaderArrey.append({'a':numOfLeader, 'b':i.changeStyle})
+
+        context['leaderPush'] =leaderArrey
+
+        return context

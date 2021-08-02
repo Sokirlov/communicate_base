@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-{#    <meta charset="UTF-8">#}
+    <meta charset="UTF-8">
     <title>DG Finance - {% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/png" href="{% static "favicon.ico" %}">
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
@@ -24,7 +24,7 @@
             {% block leftmenu %}{% endblock %}
 {#        {% endif %}#}
 {#    </div>#}
-    <div class="col overflow-hidden" id="contant" style="min-height: calc(100vh - 63px);">
+    <div class="col overflow-hidden" id="contant" style="min-height: calc(100vh - 63px); font-size: 11pt;">
         {% block content %}{% endblock %}
     </div>
 </div>

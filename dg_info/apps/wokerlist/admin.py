@@ -1,15 +1,32 @@
 from django.contrib import admin
 # from .forms import RecipeForm
-from .models import Status, Position, Department, Group, Adres, Staff, BestWorker
+from .models import Position, Department, Group, Adres, Staff, BestWorker, StuctureLeader, StructureStyle #Status,
 
+#
+# class StatusAdmin(admin.ModelAdmin):
+#     list_display = ('name',)
+#     list_display_links = ('name',)
+#     # list_editable = ()
+#     # list_filter = ['pub_date']
+#     # search_fields = ['question_text']
+# admin.site.register(Status, StatusAdmin)
 
-class StatusAdmin(admin.ModelAdmin):
+class StructureStyleAdmin(admin.ModelAdmin):
     list_display = ('name',)
     list_display_links = ('name',)
     # list_editable = ()
     # list_filter = ['pub_date']
     # search_fields = ['question_text']
-admin.site.register(Status, StatusAdmin)
+admin.site.register(StructureStyle, StructureStyleAdmin)
+
+class StuctureLeaderAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    list_display_links = ('name',)
+    # list_editable = ()
+    # list_filter = ['pub_date']
+    # search_fields = ['question_text']
+admin.site.register(StuctureLeader, StuctureLeaderAdmin)
+
 
 class PositionAdmin(admin.ModelAdmin):
     list_display = ('name',)
@@ -47,9 +64,9 @@ admin.site.register(Group, GroupAdmin)
 
 
 class StaffAdmin(admin.ModelAdmin):
-    list_display = ('name',  'group', 'position', 'work_status', 'b_date', 'start_work_date', 'adres',)
+    list_display = ('name', 'fired',  'group', 'position', 'work_status', 'b_date', 'start_work_date', 'adres',)
     list_display_links = ('name',)
-    list_editable = ('work_status',)
+    list_editable = ('work_status', 'fired',)
     list_filter = ['start_work_date', 'group', 'adres', ]
     search_fields = ['name',]
     readonly_fields = ('image_tag',)
@@ -57,7 +74,7 @@ class StaffAdmin(admin.ModelAdmin):
     # filter_horizontal = ('replacement_employee',)
     fieldsets = (
         ('Разработано Sokolov for DG Finance', {'fields':
-             (('name', 'promotion',  'start_work_date',),
+             (('name', 'promotion',  'start_work_date', 'fired',),
               ('work_status', 'replacement_employee'),
               ('group', 'position', 'adres',),
               ('image_tag', 'avatar',),

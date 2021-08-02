@@ -67,6 +67,7 @@ class Staff(models.Model):
         ('seek', 'На больничном'),
         ('wfh', 'Работает с дома'),
     )
+    fired = models.BooleanField('Если уволен отметить', default=False)
     name = models.CharField('ФИО сотрудника', max_length=500)
     b_date = models.DateField('Дата рождения', blank=True, null=True)
     start_work_date = models.DateField('Дата приема на работу')
@@ -92,6 +93,7 @@ class Staff(models.Model):
     replacement_employee = models.ForeignKey('self',  blank=True, null=True, on_delete=models.PROTECT,
                                # limit_choices_to={'promotion': 'top'},
                                              related_name='r_staf', verbose_name='Замена')
+
     def get_absolute_url(self):
         return reverse('wokerlist:staffView', kwargs={'group__id': self.group.id, 'pk': self.pk})
 
@@ -120,3 +122,27 @@ class BestWorker(models.Model):
 
     def __str__(self):
         return self.nominate
+
+class StructureStyle(models.Model):
+    name = models.CharField('Название стиля', max_length=100, )
+    changeStyle = models.TextField('стиль согласно CSS таблицы')
+    class Meta:
+
+        verbose_name = 'Настройка стилей'
+        verbose_name_plural = '2.98. Настройка стилей'
+
+    def __str__(self):
+        return self.name
+
+class StuctureLeader(models.Model):
+    name = models.CharField('Техническое название', max_length=50, help_text='1-2 слова, максимальная длина 50 симоволов')
+    leader = models.ManyToManyField(Staff,limit_choices_to={'promotion': 'top'}, verbose_name='Руководитель')
+    changeStyle = models.ForeignKey(StructureStyle, on_delete=models.CASCADE, verbose_name='Выберете стиль')
+
+    class Meta:
+
+        verbose_name = 'Обновление стилей в структуре'
+        verbose_name_plural = '2.99. Руководители в структуре предприятия'
+
+    def __str__(self):
+        return self.name
