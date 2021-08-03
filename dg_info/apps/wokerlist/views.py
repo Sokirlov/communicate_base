@@ -66,7 +66,7 @@ class Structure(ListView):
         leaderArrey = []
         for i in StuctureLeader.objects.all():
             for j in i.leader.all():
-                numOfLeader = Staff.objects.filter(name__lt=j).count()
+                numOfLeader = Staff.objects.filter(name__lt=j, fired=False).exclude(promotion='loos').count()
                 leaderArrey.append({'a':numOfLeader, 'b':i.changeStyle})
 
         context['leaderPush'] =leaderArrey
