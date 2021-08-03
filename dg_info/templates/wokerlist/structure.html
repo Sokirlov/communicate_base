@@ -2,6 +2,7 @@
 {% load static %}
     <meta charset="UTF-8">
 {% block header %}
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {packages: ["orgchart"]});
@@ -9,34 +10,30 @@
 
         function drawChart() {
             var data = new google.visualization.DataTable();
-
-            {#.setRowProperty(2, 'selectedStyle', 'background-color:#FFFF00');#}
             data.addColumn('string', 'Name');
             data.addColumn('string', 'Manager');
             data.addColumn('string', 'ToolTip');
             // For each orgchart box, provide the name, manager, and tooltip to show.
             data.addRows([
                 {% for st in structure %}
-                    [ {'v': '{{ st.name }}', 'f': '<div class="d-flex flex-column"> <div><img src="{% if st.avatar %}/media/{{ st.avatar }}{% else %}{% static 'no_photo.jpg' %}{% endif %}" width="50px" height="50px"></div><div class="w-100"><p><a class="{% if st.work_status != "InWork" %}text-danger{% endif %} " href="{{ st.get_absolute_url }}">{{ st.name }}</a><br><sup>{{ st.position }}</sup></p> </div></div>'}, '{% if st.leader %}{{ st.leader }}{% endif %}','{{ st.get_work_status_display }}',],
+                    [{
+                        'v': '{{ st.name }}',
+                        'f': '<div class="d-flex flex-column"> <div><img src="{% if st.avatar %}/media/{{ st.avatar }}{% else %}{% static 'no_photo.jpg' %}{% endif %}" width="50px" height="50px"></div><div class="w-100"><p><a class="{% if st.work_status != "InWork" %}text-danger{% endif %} " href="{{ st.get_absolute_url }}">{{ st.name }}</a><br><sup>{{ st.position }}</sup></p><div><p>&nbsp;</p><ul class="list-unstyled">{% for w in wokers %}{% if st.name in w.leader.name %}<li><a href="{{ st.get_absolute_url }}">{{w.name}}</a></li>{% endif %}{% endfor %}</ul></div> </div></div> '
+                    }, '{% if st.leader %}{{ st.leader }}{% endif %}', '{{ st.get_work_status_display }}',],
                 {% endfor %}
-
-                {#[{'v': 'Mike','f': 'Mike<div style="color:red; font-style:italic">President</div>'},'', 'The President'],#}
-                {#[{'v': 'Jim', 'f': 'Jim<div style="color:red; font-style:italic">Vice President</div>'}, 'Mike', 'VP'],#}
-                {#['Bob', 'Jim', 'Bob Sponge'],#}
-                {#['Carol', 'Mike', ''],#}
-                {#['Alice', 'Mike', ''],#}
             ]);
-
             var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
             // Draw the chart, setting the allowHtml option to true for the tooltips.
-            console.log(data['Wf'][0]['c'])
+            {#console.log(data['Wf'][0]['c'])#}
             {% for foo in leaderPush %}
-               data.setRowProperty({{ foo.a }}, 'style', '{{ foo.b.changeStyle }}');
+                data.setRowProperty({{ foo.a }}, 'style', '{{ foo.b.changeStyle }}');
             {% endfor %}
-
             {#data.setRowProperty(1, 'style', 'background: rgb(175 214 255) !important; border:0; border-radius: 20px;');#}
 
-            chart.draw(data, {'allowHtml': true, 'size':'medium', 'color':'#F9F9F9', 'selectionColor':'#f0f0f0'});
+            var options = {'allowHtml': true, 'size': 'medium', 'color': '#F9F9F9', 'selectionColor': '#f0f0f0'};
+
+
+            chart.draw(data, options);
         }
     </script>
     <style>

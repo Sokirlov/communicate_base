@@ -64,7 +64,7 @@ admin.site.register(Group, GroupAdmin)
 
 
 class StaffAdmin(admin.ModelAdmin):
-    list_display = ('name', 'fired',  'group', 'position', 'work_status', 'b_date', 'start_work_date', 'adres',)
+    list_display = ('name', 'fired', 'work_status', 'group', 'position',  'b_date', 'start_work_date', 'adres',)
     list_display_links = ('name',)
     list_editable = ('work_status', 'fired',)
     list_filter = ['start_work_date', 'group', 'adres', ]

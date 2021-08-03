@@ -90,7 +90,7 @@ class Staff(models.Model):
     promotion = models.CharField('Позиция сотрудника', max_length=20, choices=UPPER_CHOISE, default='loos',
                               help_text='Статсу сотрудника, Сотрудник/Руководильет/HR. \nБудет возможно выбрать в соотвествующих полях')
     avatar = models.ImageField('Фото сотрудника', upload_to='photo/sotrudniki', null=True, blank=True)
-    work_status = models.CharField(choices=STATUS_CHOISE, max_length=500, verbose_name='Состояние, статус', default='В работе', null=True, blank=True)
+    work_status = models.CharField(choices=STATUS_CHOISE, max_length=20, verbose_name='Состояние, статус', default='В работе', null=True, blank=True)
     replacement_employee = models.ForeignKey('self',  blank=True, null=True, on_delete=models.PROTECT,
                                # limit_choices_to={'promotion': 'top'},
                                              related_name='r_staf', verbose_name='Замена')

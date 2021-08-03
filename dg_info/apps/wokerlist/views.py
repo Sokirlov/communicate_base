@@ -58,7 +58,7 @@ class Structure(ListView):
     slug_field = 'id'
     context_object_name = 'structure'
     template_name = 'wokerlist/structure.html'
-    queryset = Staff.objects.all()
+    queryset = Staff.objects.filter(fired=False).exclude(promotion='loos')
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # allStuctureLeader.objects.all()
@@ -70,5 +70,6 @@ class Structure(ListView):
                 leaderArrey.append({'a':numOfLeader, 'b':i.changeStyle})
 
         context['leaderPush'] =leaderArrey
+        context['wokers'] = Staff.objects.filter(fired=False, promotion='loos')
 
         return context

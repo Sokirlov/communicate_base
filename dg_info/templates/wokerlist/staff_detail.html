@@ -5,8 +5,16 @@
     <div class="container-fluid d-flex flex-column">
         <div class="row">
             <div class="col-10"><h1 class="display-6 text-primary">{{ staff.name }}</h1></div>
-            <div class="col align-self-end {% if 'InWork' in staff.work_status %} text-success fw-bold {% else %} text-danger{% endif %}">
-                {% if staff.work_status %}
+            <div class="col align-self-end
+{% if staff.fired %}
+text-danger fw-bold
+{% elif 'InWork' in staff.work_status %}
+ text-success
+{% else %} text-danger fw-bold
+{% endif %}">
+                {% if staff.fired %}
+                    УВОЛЕН
+                {% elif staff.work_status %}
                 {{ staff.get_work_status_display }}
                 {% endif %}
                 </div>
