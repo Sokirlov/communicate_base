@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'contractors',
     'fileserv',
     'blog',
+    'oprosnik',
 ]
 
 MIDDLEWARE = [
