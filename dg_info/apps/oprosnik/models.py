@@ -22,7 +22,8 @@ class OneWeekOpros(models.Model):
     acquaintance = models.CharField('Как прошло знакомство с коллективом?',
                                     choices=CHISES_MANY, max_length=10)
     impressions = models.TextField('Ваши впечатления от коллектива?')
-    workPlace = models.CharField('Ваши впечатления от коллектива?',
+    workPlace = models.CharField('Было ли готово Ваше рабочее место в первый рабочий день?',
+                                 help_text='имеется в виду компьютер, стол и стул',
                                  choices=CHISES_YES_NO, max_length=5)
     whatDoIspatal = models.CharField('Понятен ли Вам функционал? Чем необходимо заниматься в период испытательного срока?',
                                      choices=CHISES_YES_NO, max_length=5)

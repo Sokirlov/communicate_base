@@ -5,7 +5,7 @@ class OneWeekOprosForm(forms.ModelForm):
 
     class Meta:
         model = OneWeekOpros
-        fields =("acquaintance", "firstWeek", "hrWork", "impressions", "leaderAim", "leaderConnect", "leaderFixed", "leaderRadio", "leaderWork", "whatDoIspatal", "workComfort", "workPlace", "whyDG",)
+        fields =("whyDG", "hrWork", "leaderWork", "acquaintance",  "impressions",  "workPlace", "whatDoIspatal", "leaderConnect", "leaderFixed", "leaderAim", "leaderRadio", "workComfort", "firstWeek",)
         # widgets = {
         #     'name': forms.TextInput(attrs={'placeholder': _('ПІБ'), 'class': 'form-control'}),
         #     'tel': forms.TextInput(attrs={'placeholder': _('Телефон'), 'class': 'form-control'}),
