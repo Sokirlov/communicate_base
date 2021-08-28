@@ -2,8 +2,12 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Status, Position, Department, Group, Adres, Staff, BestWorker, StuctureLeader
+
 import datetime
+from django.db.models import Q
 from datetime import timedelta, date
+from haystack.query import SearchQuerySet
+
 today = datetime.date.today()
 
 
@@ -12,11 +16,38 @@ class GroupListView(ListView):
     slug_field = 'id'
     context_object_name = 'staff'
 
+
+
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['lmenu'] = Group.objects.all().prefetch_related(
             'staff_set')
 
+        return context
+
+class SearchResultsView(ListView):
+# def SearchResultsView(request):
+    model = Staff
+    # slug_field = 'id'
+    context_object_name = 'staff'
+    template_name = 'search/search.html'
+    # form_class = SearchForm
+    # queryset = SearchQuerySet().filter(content='Соколов')
+
+
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        staff = SearchQuerySet().models(Staff).filter(content__startswith=query).load_all()
+        return staff
+    # return render(request, 'search/search.html', {'staff': queryset, 'allStaff': allStaff})
+
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        context['lmenu'] = Group.objects.all().prefetch_related('staff_set')
+        # context['search'] =SearchQuerySet().filter(content=(self.request.GET.get('q'))).load_all()
+        # print('last', context['search'].query.model)
         return context
 
 class GroupDetailView(DetailView):

@@ -18,7 +18,11 @@
 {% block content %}
 <div class=" overflow-hidden">
     <h1 class="display-3 text-center text-info text-uppercase w-100 align-self-stretch ">
-        {{ posts.category }}</h1>
+       {% if posts.name %}
+           {{ posts.name }}
+       {% else %}
+           {{ posts.category }}
+       {% endif %}  </h1>
     <div class="">
         <sub class="text-muted">Последнее обновление: {{ posts.edited }}</sub>
         <div class="border-top mt-1">

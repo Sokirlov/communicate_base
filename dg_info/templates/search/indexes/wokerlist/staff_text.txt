@@ -1,0 +1,3 @@
+{{ object.name }}
+{{ object.w_tel }}
+{{ object.p_tel }}

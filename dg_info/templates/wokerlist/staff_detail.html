@@ -43,83 +43,33 @@ text-danger fw-bold
 
             </div>
             <div class="col border-start border-primary pb-3">
-                <h3 class="display-6 text-info">Контакты</h3>
-                <div><strong>Адрес:</strong> {{ staff.adres }}</div>
-                <div><strong>Отдел:</strong> <a href="/adr/{{ staff.group.id }}/"> {{ staff.group }}</a></div>
-                <div><strong>Руководитель:</strong>
-                    {% if staff.leader %}
-                            <a href="/adr/{{ staff.leader.group.id }}/{{ staff.leader.id }}/" >{{ staff.leader }}</a>
-                    {% else %}
-                        Не нуждается
-                    {% endif %}
-                </div>
-                {% if staff.w_mail %}<div><strong>Рабочая почта:</strong>
-                    <a href="mailto:{{ staff.w_mail }}">{{ staff.w_mail }}</a>
-                </div>{% endif %}
-                {% if staff.w_tel %}<div><strong>Рабочий телефон:</strong>
-                    <a href="tel:+38{{ staff.w_tel }}"> {{ staff.w_tel }}</a>
-                </div>{% endif %}
-                {% if staff.с_tel %}<div><strong>Корпоративный номер:</strong>
-                    <a href="tel:+38{{ staff.с_tel }}">{{ staff.с_tel }}</a>
-                </div>{% endif %}
-                <div><strong>HR:</strong>
-                    {% if staff.hr %}
-                            <a href="/adr/{{ staff.hr.group.id }}/{{ staff.hr.id }}/" >{{ staff.hr }}</a>
-                    {% else %}
-                        ----
-                    {% endif %}
-                </div>
-                {% if staff.start_work_date %}<div><strong>Принят в компанию:</strong>
-                    {{ staff.start_work_date }}
-                </div>{% endif %}
+
+                <h3 class="display-6 text-info">Рабочие контакты</h3>
+                <div class="my-2"><strong class="text-info">Адрес: </strong> {{ staff.adres }}</div>
+                <div class="my-2"><strong class="text-info">Отдел: </strong> <a href="/adr/{{ staff.group.id }}/"> {{ staff.group }}</a></div>
+                <div class="my-2"><strong class="text-info">Руководитель: </strong>{% if staff.leader %}<a href="/adr/{{ staff.leader.group.id }}/{{ staff.leader.id }}/" >{{ staff.leader }}</a>{% else %}Не нуждается{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Рабочая почта: </strong>{% if staff.w_mail %}<a href="mailto:{{ staff.w_mail }}">{{ staff.w_mail }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Рабочий телефон: </strong>{% if staff.w_tel %}<a href="tel:+38{{ staff.w_tel }}"> {{ staff.w_tel }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Корпоративный номер: </strong>{% if staff.с_tel %}<a href="tel:+38{{ staff.с_tel }}">{{ staff.с_tel }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">HR: </strong>{% if staff.hr %}<a href="/adr/{{ staff.hr.group.id }}/{{ staff.hr.id }}/" >{{ staff.hr }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Принят в компанию: </strong>{% if staff.start_work_date %}{{ staff.start_work_date }}{% else %}----{% endif %}</div>
+
+{#---------------------------            personal info --------------------------------------------------------#}
+                <h3 class="mt-4  display-6 text-info">Личные данные</h3>
+                <div class="my-2"><strong class="text-info">День рождения:</strong> {{ staff.b_date|date:"d F" }}</div>
+                <div class="my-2"><strong class="text-info">Личный номер: </strong>{% if staff.p_tel %}<a href="tel:+38{{ staff.p_tel }}">{{ staff.p_tel }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Личная почта: </strong>{% if staff.p_mail %}<a href="mailto:{{ staff.p_mail }}">{{ staff.p_mail }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Viber: </strong>{% if staff.viber %}<a href="viber://chat/?number=%2B38{{ staff.viber }}">{{ staff.viber }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Telegram: </strong>{% if staff.telegram %}<a href="tg://resolve?domain={{ staff.telegram }}">{{ staff.telegram }}</a>{% else %}----{% endif %}</div>
+                <div class="my-2"><strong class="text-info">Skype: </strong>{% if staff.skype %}<a href="skype:{{ staff.skype }}?chat">{{ staff.skype }}</a>{% else %}----{% endif %}</div>
+
             </div>
         </div>
         <div class="row">
-
-        <h3 class="mt-4 text-center display-6 text-info">Личные данные</h3>
-            <div><strong>День рождения:</strong> {{ staff.b_date|date:"d F" }}</div>
-            <div class="row">
-                <div class="col"><strong>Личный номер: </strong>
-                    {% if staff.p_tel %}
-                        <a href="tel:+38{{ staff.p_tel }}">{{ staff.p_tel }}</a>
-                    {% else %}
-                         нет данных
-                    {% endif %}
-                </div>
-                <div class="col"><strong>Личная почта: </strong>
-                    {% if staff.p_mail %}
-                        <a href="mailto:{{ staff.p_mail }}">{{ staff.p_mail }}</a>
-                    {% else %}
-                         нет данных
-                    {% endif %}
-                </div>
+            <div class="border-top border-primary">
+                <h3 class="text-center  display-6 text-info">Хобби и интересы</h3>
+                {{ staff.hobby|markdown }}
             </div>
-            <div class="row mb-3">
-                <div class="col"><strong>Viber: </strong>
-                    {% if staff.viber %}
-                        <a href="viber://chat/?number=%2B38{{ staff.viber }}">{{ staff.viber }}</a>
-                    {% else %}
-                         нет данных
-                    {% endif %}
-                </div>
-                <div class="col"><strong>Telegram: </strong>
-                    {% if staff.telegram %}
-                        <a href="tg://resolve?domain={{ staff.telegram }}">{{ staff.telegram }}</a>
-                    {% else %}
-                         нет данных
-                    {% endif %}
-                </div>
-                <div class="col"><strong>Skype: </strong>
-                    {% if staff.skype %}
-                        <a href="skype:{{ staff.skype }}?chat">{{ staff.skype }}</a>
-                    {% else %}
-                         нет данных
-                    {% endif %}
-                </div>
-            </div>
-        <div class="border-top border-primary">
-            <h3 class="text-center  display-6 text-info">Хобби и интересы</h3>
-            {{ staff.hobby|markdown }}</div>
         </div>
     </div>
 <p>&nbsp;</p>

@@ -2,3 +2,5 @@
 migrations/
 venv/
 local_conf.py
+solr/
+solr-8.9.0.zip

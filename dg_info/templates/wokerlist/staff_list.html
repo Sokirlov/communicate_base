@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Сотрудники</h1>
-<ol>
+    <h1 class="border-bottom display-3 my-2 py-2 text-center text-info text-uppercase w-100">Сотрудники</h1>
+
+        <form action="/search/" method="get">
+            <input class="w-100 mb-2" name="q" type="text" placeholder="Поиск...">
+            <button class="float-end mb-5" type="submit" value="submit">Поиск</button>
+            <p>&nbsp;</p>
+        </form>
+    <ol>
 {% for g in staff %}
         <li class="lh-lg"><a class="{% if g.fired %}
         text-muted

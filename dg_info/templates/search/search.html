@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="border-bottom display-3 my-2 py-2 text-center text-info text-uppercase w-100">Найдено</h1>
+<form action="/search/" method="get">
+            <input class="w-100 mb-2" name="q" type="text" placeholder="Поиск...">
+            <button class="float-end mb-5" type="submit" value="submit">Поиск</button>
+            <p>&nbsp;</p>
+        </form>
+    <ol>
+{% for s in staff %}
+    {% with g=s.object %}
+        <li class="lh-lg pt-5">
+            <a class="{% if g.fired %} text-muted{% endif %} " href="{{ g.get_absolute_url }}">{{ g.name }}</a>
+            <div class="d-flex w-100 bg-light p-3">
+                <div class="w-50">Номер телефона
+                    <ul>
+                        <li>Рабочий: <a href="tel:+38{{ g.w_tel }}">{{ g.w_tel }}</a></li>
+                        <li>Корпоративный: <a href="tel:+38{{ g.c_tel }}">{{ g.c_tel }}</a></li>
+                        <li>Личный: <a href="tel:+38{{ g.p_tel }}">{{ g.p_tel }}</a></li>
+                    </ul>
+                </div>
+                <div>
+                    e-mail
+                    <ul>
+                        <li>Рабочий: <a href="mailto:{{ g.w_mail }}">{{ g.w_mail }}</a></li>
+                        <li>Личный: <a href="mailto:{{ g.p_mail }}">{{ g.p_mail }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+    {% endwith %}
+
+{% endfor %}
+</ol>
+{% endblock %}

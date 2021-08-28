@@ -1,5 +1,5 @@
-from django.urls import path
-from .views import GroupListView, GroupDetailView, StaffDetailView
+from django.urls import path, include
+from .views import GroupListView, GroupDetailView, StaffDetailView, SearchResultsView
 
 app_name = 'wokerlist'
 

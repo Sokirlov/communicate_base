@@ -22,7 +22,7 @@
     <div class="d-flex flex-column align-items-center">
 
             {% for p in post %}
-                    <div class="card p-5 m-1">
+                    <div class="card p-5 m-1 w-100">
                     <h4>{{ p.name }}</h4>
                         <p>{{ p.text|safe|escape|truncatewords:20 }}</p>
                         <a class="text-decoration-none" href="{{ p.get_absolute_url }}">Подробнее</a>

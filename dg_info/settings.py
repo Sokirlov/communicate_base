@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'wokerlist.apps.WokerlistConfig',
     'django_cleanup.apps.CleanupConfig',
     'ckeditor',
@@ -86,7 +87,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'ru-RU'
 
@@ -132,4 +132,16 @@ CKEDITOR_CONFIGS = {
             # ['Image', 'Update', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
         ),
     }
+}
+
+# elastic search
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://127.0.0.1:8983/solr/wokerlist/',                 # Assuming you created a core named 'tester' as described in installing search engines.
+        'ADMIN_URL': 'http://127.0.0.1:8983/solr/admin/cores',
+        # 'INDEX_NAME': 'wokerlist',
+        # 'INCLUDE_SPELLING': True,
+    },
 }

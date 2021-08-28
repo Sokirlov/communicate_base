@@ -3,7 +3,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
-from wokerlist.views import BirthdayView, BestWorkerView, Structure
+from wokerlist import views
+from wokerlist.views import BirthdayView, BestWorkerView, Structure, SearchResultsView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -18,5 +19,8 @@ urlpatterns = [
     path('graphic/', Structure.as_view(), name='tmp'),
     path('birthdays/', BirthdayView.as_view(), name='birthdays'),
     path('best/', BestWorkerView.as_view(), name='best'),
+    # path('search/', include('haystack.urls'),),
+    # path('search/', views.SearchResultsView, name='search_results'),
+    path('search/', SearchResultsView.as_view(), name='search_results'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
