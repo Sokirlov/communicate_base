@@ -16,9 +16,6 @@ class GroupListView(ListView):
     slug_field = 'id'
     context_object_name = 'staff'
 
-
-
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['lmenu'] = Group.objects.all().prefetch_related(
@@ -56,7 +53,6 @@ class GroupDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         context['staff'] = Staff.objects.filter(group=self.get_object())
         context['lmenu'] = Group.objects.all()
-
         return context
 
 class StaffDetailView(DetailView):
@@ -65,10 +61,7 @@ class StaffDetailView(DetailView):
     context_object_name = 'staff'
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
-        context['lmenu'] = Group.objects.all().prefetch_related(
-                    'staff_set')
-
+        context['lmenu'] = Group.objects.all().prefetch_related('staff_set')
         return context
 
 
@@ -77,6 +70,34 @@ class BirthdayView(ListView):
     context_object_name = 'birthdays'
     queryset = Staff.objects.filter(b_date__month=today.month)
     template_name = 'wokerlist/birthdays.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        firstDayOfMonth = today.replace(day=1)
+        lastDayOfMonth = today.replace(month=today.month + 1, day=1) - datetime.timedelta(days=1)
+        DaysOfMonth = []
+        for i in range(firstDayOfMonth.day, lastDayOfMonth.day+1):
+            day = "{:02d}".format(i)
+            DaysOfMonth.append(day)
+
+        for j in range(1, firstDayOfMonth.isoweekday()):
+            DaysOfMonth.insert(0, 0)
+
+        NewMonthes = []
+        first = 0
+        last = 7
+        for h in range(1, 6):
+            weekss = []
+            for k in DaysOfMonth[first:last]:
+                weekss.append(k)
+            first += 7
+            last += 7
+            NewMonthes.append(weekss)
+
+
+        context['DayOfMonth'] = NewMonthes
+        print(NewMonthes)
+        return context
 
 class BestWorkerView(ListView):
     model = BestWorker
@@ -93,13 +114,11 @@ class Structure(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # allStuctureLeader.objects.all()
-
         leaderArrey = []
         for i in StuctureLeader.objects.all():
             for j in i.leader.all():
                 numOfLeader = Staff.objects.filter(name__lt=j, fired=False).exclude(promotion='loos').count()
                 leaderArrey.append({'a':numOfLeader, 'b':i.changeStyle})
-
         context['leaderPush'] =leaderArrey
         context['wokers'] = Staff.objects.filter(fired=False, promotion='loos')
 

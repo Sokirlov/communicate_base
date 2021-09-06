@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
     <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Лучшие сотрудники</h1>
     <div class="align-items-center container-fluid d-flex flex-column w-100">
@@ -10,7 +11,7 @@
             <div class="align-items-stretch d-flex flex-wrap">
                 {% for best in b.staff.all %}
                     <div class="card m-2" style="width: calc(18vw - 4px); min-height: 30vw;">
-                        <div style="background: url('/media/{{ best.avatar }}'); width: calc(18vw - 6px); height: 18vw; background-size: cover; background-position: center;" class="card-img-top"  alt="{{ best.name }} - {{ best.title }}"></div>
+                        <div style="background: url('{% if best.avatar %}/media/{{ best.avatar }}{% else %} {% static 'no_photo.jpg' %}{% endif %}'); width: calc(18vw - 6px); height: 18vw; background-size: cover; background-position: center;" class="card-img-top"  alt="{{ best.name }} - {{ best.title }}"></div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="{{ best.get_absolute_url }}" class="card-link">{{ best.name }}</a>
                             </h5>

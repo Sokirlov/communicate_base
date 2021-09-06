@@ -1,36 +1,104 @@
 {% extends 'base.html' %}
+{% load wokerlist_tags %}
+{% load static %}
+{% block header %}
+<style>
+td{
+    border-left: 1px solid #ccc;
+}
+td:first-child{
+    border-left: none;
+}
+table{
+    margin: 20px 0 100px 0;
+}
+.opc-4{
+    opacity: 0.4;
+}
+</style>
+{% endblock %}
 {% block content %}
-    <h1 class="border-bottom display-3 mb-5 my-2 py-2 text-center text-info text-uppercase w-100">Дни рождения в {% now "F" %}е</h1>
-<div class="align-items-center container-fluid d-flex w-75">
+    <h1 class="border-bottom display-3 my-2 py-2 text-center text-info text-uppercase w-100">Дни рождения в {% now "F" %}е</h1>
+    <div class="d-flex py-3 px-5" style="margin: -15px; background-image: url('{% static 'birthday.jpg' %}'); background-position: right bottom; background-size: cover;">
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Дата</th>
-            <th scope="col">Сотрудник</th>
-            <th scope="col">Отдел</th>
+<div class="align-items-center d-flex w-75">
+
+    <table width="100%">
+        <tr class="bg-warning">
+            <td class="text-center py-3 text-uppercase" width="14%">Понедельник</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Вторник</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Среда</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Четверг</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Пятница</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Суббота</td>
+            <td class="text-center py-3 text-uppercase" width="14%">Воскресенье</td>
         </tr>
-        </thead>
-        <tbody>
-{% for g in birthdays %}
+    {% for wk in DayOfMonth %}
+        <tr>
+            {% for foo in wk %}
+                <td class="text-center" style="vertical-align: text-top;">
+                    {% if foo != 0 %}
+                    <p class="bg-light p-1 tex text-start w-100 text-black-50
+                     {% for g in birthdays %}
+{% with birthday=g.b_date|date:"d"  %}
+{% if foo in birthday %}
+{#opc-4#}
+{% else %}
+opc-4
+{% endif %}
+{% endwith %}
+{% endfor %}
+">{{ foo }} {% now "N" %}</p>
+                    {% endif %}
+                <ul class="px-1 list-unstyled">
+            {% for g in birthdays %}
+                {% with birthday=g.b_date|date:"d"  %}
+            {% if foo in birthday %}
+                <li class="border-bottom"><a href="{{ g.get_absolute_url }}"><sup>{{ g.name|truncatewords:2 }}</sup></a></li>
+            {% endif %}
+            {% endwith %}
+            {% endfor %}
+              &nbsp;</ul>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+
+</table>
+
+{#        <p>&nbsp;</p>#}
+{#    <table class="table">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th scope="col">Дата</th>#}
+{#            <th scope="col">Сотрудник</th>#}
+{#            <th scope="col">Отдел</th>#}
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{##}
+{##}
+{#        {% for g in birthdays %}#}
 {#    <li class="lh-lg border-bottom">#}
 {#        {{ g.b_date }}<br><a href="/adr/{{ g.group.id }}/{{ g.id }}/">{{ g.name }}</a>#}
 {#    </li>#}
-
-
-    <tr>
-        <th scope="row">{{ g.b_date|date:"d E" }}<br/><span class="text-muted"> {{ g.b_date|date:"l" }}</span></th>
-        <td><a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a></td>
-        <td>{{ g.group }}</td>
-    </tr>
-
-
-
-
-{% endfor %}
-  </tbody>
-</table>
+{##}
+{##}
+{#    <tr>#}
+{#        <th scope="row">{{ g.b_date|date:"d E" }}<br/><span class="text-muted"> {{ g.b_date|date:"l" }}</span></th>#}
+{#        <td><a href="{{ g.get_absolute_url }}" class="card-link">{{ g.name }}</a></td>#}
+{#        <td>{{ g.group }}</td>#}
+{#    </tr>#}
+{##}
+{##}
+{##}
+{##}
+{#{% endfor %}#}
+{#  </tbody>#}
+{#</table>#}
 </div>
+    <div> &nbsp;</div>
+    </div>
 {% endblock %}
 
 <div class="card" style="width: 18rem; height: 18rem;">
