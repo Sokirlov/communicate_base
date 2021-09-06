@@ -39,24 +39,15 @@ table{
                 <td class="text-center" style="vertical-align: text-top;">
                     {% if foo != 0 %}
                     <p class="bg-light p-1 tex text-start w-100 text-black-50
-                     {% for g in birthdays %}
-{% with birthday=g.b_date|date:"d"  %}
-{% if foo in birthday %}
-{#opc-4#}
-{% else %}
-opc-4
-{% endif %}
-{% endwith %}
-{% endfor %}
-">{{ foo }} {% now "N" %}</p>
+{% for g in birthdays %}{% with birthday=g.b_date|date:"d"  %}{% if foo in birthday %}{% else %}
+opc-4{% endif %}{% endwith %}{% endfor %}">{{ foo }} {% now "N" %}</p>
                     {% endif %}
                 <ul class="px-1 list-unstyled">
             {% for g in birthdays %}
-                {% with birthday=g.b_date|date:"d"  %}
-            {% if foo in birthday %}
+            {% if foo in g.b_date|date:"d" %}
                 <li class="border-bottom"><a href="{{ g.get_absolute_url }}"><sup>{{ g.name|truncatewords:2 }}</sup></a></li>
             {% endif %}
-            {% endwith %}
+
             {% endfor %}
               &nbsp;</ul>
             </td>
