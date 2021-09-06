@@ -18,7 +18,7 @@ table{
 </style>
 {% endblock %}
 {% block content %}
-    <h1 class="border-bottom display-3 my-2 py-2 text-center text-info text-uppercase w-100">Дни рождения в {% now "F" %}е</h1>
+    <h1 class="border-bottom display-3 my-2 py-2 text-center text-info text-uppercase w-100">{% now "F" %} - Дни рождения </h1>
     <div class="d-flex py-3 px-5" style="margin: -15px; background-image: url('{% static 'birthday.jpg' %}'); background-position: right bottom; background-size: cover;">
 
 <div class="align-items-center d-flex w-75">
@@ -39,8 +39,13 @@ table{
                 <td class="text-center" style="vertical-align: text-top;">
                     {% if foo != 0 %}
                     <p class="bg-light p-1 tex text-start w-100 text-black-50
-{% for g in birthdays %}{% with birthday=g.b_date|date:"d"  %}{% if foo in birthday %}{% else %}
-opc-4{% endif %}{% endwith %}{% endfor %}">{{ foo }} {% now "N" %}</p>
+{% for g in birthdays %}
+{% with birthday=g.b_date|date:"d"  %}
+
+{% if foo not in birthday %}
+opc-4
+{% else %}
+{% endif %}{% endwith %}{% endfor %}">{{ foo }} {% now "N" %}</p>
                     {% endif %}
                 <ul class="px-1 list-unstyled">
             {% for g in birthdays %}
