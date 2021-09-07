@@ -28,6 +28,7 @@ class Posts(models.Model):
     created = models.DateTimeField('Дата создания', auto_now_add=True)
     edited = models.DateTimeField('Дата последнего редактирования', auto_now=True)
     text = RichTextUploadingField('Текст статьи')
+    publicate = models.BooleanField('Опубликовать', default=False)
 
     def get_absolute_url(self):
         return reverse('blog:postView', kwargs={'cut': self.category.slug, 'slug': self.slug})

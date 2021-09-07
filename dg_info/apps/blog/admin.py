@@ -11,15 +11,15 @@ class BlogCategoryAdmin(admin.ModelAdmin):
 admin.site.register(BlogCategory, BlogCategoryAdmin)
 
 class PostsAdmin(admin.ModelAdmin):
-    list_display = ('id',  'name', 'category', 'created',)
+    list_display = ('id',  'name', 'category', 'created', 'publicate',)
     list_display_links = ('id', 'name',)
-    # list_editable = ('idSort',)
+    list_editable = ('publicate',)
     prepopulated_fields = {'slug': ('name',),}
     readonly_fields = ('created', 'edited',)
     list_filter = ['category',]
     search_fields = ['name',]
     fieldsets = (('Разработано Sokolov for DG Finance',{'fields':(
-        'category',
+        ('category', 'publicate',),
         ('name', 'slug',),
         ('created', 'edited',),
         'text',

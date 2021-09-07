@@ -8,6 +8,7 @@ class BlogCategoryListView(ListView):
     slug_field = 'slug'
     context_object_name = 'post'
     template_name = 'blog/index.html'
+    queryset = Posts.objects.filter(publicate=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -22,7 +23,7 @@ class BlogCategoryDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['post'] = Posts.objects.filter(category_id=self.object.id)
+        context['post'] = Posts.objects.filter(category_id=self.object.id, publicate=True)
         context['l_menu'] = BlogCategory.objects.all()
         return context
 
