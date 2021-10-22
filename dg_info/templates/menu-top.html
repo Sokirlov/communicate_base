@@ -47,10 +47,8 @@
           active text-uppercase text-decoration-underline
           {% endif %}" href="{% url 'fileserv:main' %}">Шаблоны документов</a>
                 </li>
-
-                {% if perms.wokerlist.view_payments %}
-                    | <a class="nav-link" href="{% url 'oprosnik:oneWeek' %}">Опрос</a>
-                </li>
+                {% if user.is_authenticated %}
+                    <li><a class="nav-link" href="{% url 'oprosnik:oneWeek' %}">Опрос</a></li>
                 {% endif %}
                 {#        <li class="nav-item">#}
                 {#          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>#}
