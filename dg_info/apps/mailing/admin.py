@@ -50,6 +50,20 @@ class MailingAdmin(admin.ModelAdmin):
     # list_editable = ()
     # list_filter = ['pub_date']
     # search_fields = ['question_text']
+    autocomplete_fields = ['users_to_send']
+
+
+    fieldsets = (
+        ('Разработано Sokolov for DG Finance', {'fields':
+                                                    ("title_mail",
+                                                     "text_mail",
+                                                     "all_to_send",
+                                                     "gorup_to_send",
+                                                     "users_to_send",
+                                                     "start_send_email")}
+         ),
+    )
+
     def save_model(self, request, obj, form, change):
         super(MailingAdmin, self).save_model(request, obj, form, change)
         if form.cleaned_data['start_send_email']:
