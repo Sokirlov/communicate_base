@@ -7,7 +7,7 @@ import asyncio
 
 
 
-def sending_mails_for_workers(mails, subject, message, atach):
+def sending_mails_for_workers(mails, subject, message, atach=None):
     # print('start sending emails')
     messages = []
     # send_mail(subject, message, 'info@anticollect.org', ['k.sokolov@dgfinance.com.ua',], html_message=message)

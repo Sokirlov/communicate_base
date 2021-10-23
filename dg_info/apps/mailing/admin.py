@@ -71,5 +71,6 @@ class MailingAdmin(admin.ModelAdmin):
             sending_mails_for_workers(sender_list,
                                       form.cleaned_data['title_mail'],
                                       form.cleaned_data['text_mail'],
-                                      form.cleaned_data['file_mail'])
+                                      # form.cleaned_data['file_mail']
+                                      )
 admin.site.register(MailingModel, MailingAdmin)
