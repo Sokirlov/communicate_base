@@ -57,6 +57,7 @@ class MailingAdmin(admin.ModelAdmin):
         ('Разработано Sokolov for DG Finance', {'fields':
                                                     ("title_mail",
                                                      "text_mail",
+                                                     # "file_mail",
                                                      "all_to_send",
                                                      "gorup_to_send",
                                                      "users_to_send",
