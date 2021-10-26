@@ -23,4 +23,4 @@ class Command(BaseCommand):
             # send_mass_mail(messages)
 
             # print('It`s sended ', t_mail.subject, t_mail.message)
-            send_mail(subject, message, 'dg_info@dgfinance.com.ua', ['k.sokolov@dgfinance.com.ua'])
+            send_mail(subject, message, 'dg_info@dgfinance.com.ua', ['k.sokolov@dgfinance.com.ua', 'm.goleva@dgfinance.com.ua'])
