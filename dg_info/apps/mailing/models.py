@@ -20,3 +20,15 @@ class MailingModel(models.Model):
 
     def __str__(self):
         return self.title_mail
+
+
+class Birthday(models.Model):
+    subject = models.CharField('Заголовок письма', max_length=500)
+    message = models.TextField()
+
+    class Meta:
+        verbose_name = 'Поздравление'
+        verbose_name_plural = 'Поздравление с Днем Рождения'
+
+    def __str__(self):
+        return "%s" % (self.subject)

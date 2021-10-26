@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import MailingModel
+from .models import MailingModel, Birthday
 from wokerlist.models import Staff, Group
 from .mailsend import sending_mails_for_workers
 
@@ -75,3 +75,16 @@ class MailingAdmin(admin.ModelAdmin):
                                       # form.cleaned_data['file_mail']
                                       )
 admin.site.register(MailingModel, MailingAdmin)
+
+
+class BirthdayAdmin(admin.ModelAdmin):
+    list_display = ('id', 'subject')
+    list_display_links = ('subject',)
+    def has_add_permission(self, request):
+        allcontact = len(Birthday.objects.all())
+        if(allcontact > 0):
+            return False
+        else:
+            return True
+
+admin.site.register(Birthday, BirthdayAdmin)
