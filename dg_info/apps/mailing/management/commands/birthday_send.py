@@ -17,10 +17,10 @@ class Command(BaseCommand):
             message = t_mail.message
             today = datetime.date.today()
             be_beathday = Staff.objects.filter(b_date=today)
-            # messages = []
-            # for i in be_beathday:
-            #     messages.append((subject, message, 'dg_info@dgfinance.com.ua', [i.w_mail, ],))
-            # send_mass_mail(messages)
+            messages = []
+            for i in be_beathday:
+                messages.append((subject, message, 'dg_info@dgfinance.com.ua', [i.w_mail, ],))
+            send_mass_mail(messages)
 
             # print('It`s sended ', t_mail.subject, t_mail.message)
-            send_mail(subject, message, 'dg_info@dgfinance.com.ua', ['k.sokolov@dgfinance.com.ua', 'm.goleva@dgfinance.com.ua'])
+            # send_mail(subject, message, 'dg_info@dgfinance.com.ua', ['k.sokolov@dgfinance.com.ua', 'm.goleva@dgfinance.com.ua'])
