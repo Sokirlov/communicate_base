@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="bg-light" style="margin-top: -50px; padding-top: 30px; padding-bottom: 50px;">
+<div class="container w-75 mt-5 pt-2 pb-3 bg-white" >
+    {% for q in quessions %}
+<h1 class="text-center">{{ q.name }}</h1>
+<form action="" method="post">
+{% csrf_token %}
+
+{#    {{ form.as_p }}#}
+    <div class="row">
+    <ol>
+        {% for ques in q.quessions_set.all %}
+         <li>
+             <p>{{ ques }}</p>
+{% if ques.variantsanswer_set.all|length > 1 %}
+    <div class="row">
+         {% for ans in ques.variantsanswer_set.all %}
+             <div class="col">
+                 <input type="radio" id="id_{{ ans }}" name="{{ ques }}" value="{{ ans.id }}"> &nbsp;
+                 <label for="{{ ans }}">{{ ans }}</label>
+
+             </div>
+         {% endfor %}
+    </div>
+{% else %}
+    <input type="text" name="{{ ques }}">
+{% endif %}
+         </li> <br>
+        {% endfor %}
+    </ol>
+    </div>
+    {% endfor %}
+<input type="submit" value="Отправить">
+</form>
+</div>
+{% endblock %}

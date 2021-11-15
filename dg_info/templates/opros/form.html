@@ -2,12 +2,13 @@
 {% block content %}
     <div class="bg-light" style="margin-top: -50px; padding-top: 30px; padding-bottom: 50px;">
 <div class="container w-50 mt-5 pt-2 pb-3 bg-white" >
-<h1 class="text-center">Опрос</h1>
-    <form action="" method="post" >
+<h1 class="text-center">Опросы</h1>
+
+        <form action="" method="post" >
        <div> {% csrf_token %}</div>
-{#        {{ OneWeekOprosForm }}#}
-{#        {{ form.helptext }}#}
-{#        {{ form.firstWeek }}#}
+        {{ OneWeekOprosForm }}
+        {{ form.helptext }}
+        {{ form.firstWeek }}
     <div>
     <ol>
         {% for foo in form %}
@@ -19,10 +20,12 @@
         {% endfor %}
     </ol>
 </div>
-        
-{#        {{ form.as_table}}#}
+
+        {{ form.as_table}}
         <input type="submit" value="Отправить">
 
 </form>
+
+
 </div>
 {% endblock %}

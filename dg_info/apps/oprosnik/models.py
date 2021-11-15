@@ -1,54 +1,76 @@
 from django.db import models
 from wokerlist.models import Staff
+import datetime
 
-class OneWeekOpros(models.Model):
-    CHISES_MANY = (
-        ('awesome', 'Отлично'),
-        ('good', 'Не плохо'),
-        ('normal', 'Удовлетворительно'),
-        ('bad', 'Плохо'),
-        ('awfully', 'Ужасно'),
-    )
-    CHISES_YES_NO = (
-        ('yes', 'Да'),
-        ('no', 'Нет'),
-    )
-    dateAnsvered = models.DateTimeField(auto_now_add=True)
-    whyDG = models.CharField('Почему Вы выбрали именно нашу компанию?', max_length=1000)
-    hrWork = models.CharField('Ваше впечатление от взаимодействия с HR на этапе предложения о работе и собеседования.',
-                              choices=CHISES_MANY, max_length=10)
-    leaderWork = models.TextField('Ваше впечатление от взаимодействия с непосредственным руководителем на этапе собеседования.',
-                                  help_text='оцените от 1 до 10, также необходимо прокомментировать оценку')
-    acquaintance = models.CharField('Как прошло знакомство с коллективом?',
-                                    choices=CHISES_MANY, max_length=10)
-    impressions = models.TextField('Ваши впечатления от коллектива?')
-    workPlace = models.CharField('Было ли готово Ваше рабочее место в первый рабочий день?',
-                                 help_text='имеется в виду компьютер, стол и стул',
-                                 choices=CHISES_YES_NO, max_length=5)
-    whatDoIspatal = models.CharField('Понятен ли Вам функционал? Чем необходимо заниматься в период испытательного срока?',
-                                     choices=CHISES_YES_NO, max_length=5)
-    leaderConnect = models.CharField('Мой руководитель дает мне эффективную обратную связь, которая помогает мне улучшить свою работу.',
-                                     choices=CHISES_MANY, max_length=10)
-    leaderFixed = models.CharField('За Вами закреплён наставник?',
-                                   help_text='имеется в виду человек, у которого Вы можете спросить, уточнить, узнать необходимую информацию',
-                                   choices=CHISES_YES_NO, max_length=5)
-    leaderAim = models.CharField('Мой руководитель держит команду сфокусированной на приоритетных результатах/конечном результате.',
-                                help_text='имеется в виду человек, у которого Вы можете спросить, уточнить, узнать необходимую информацию',
-                                choices=CHISES_MANY, max_length=10)
-    leaderRadio = models.CharField('Мой руководитель транслирует ясные цели для нашей команды.',
-                                   help_text='имеется в виду человек, у которого Вы можете спросить, уточнить, узнать необходимую информацию',
-                                   choices=CHISES_MANY, max_length=10)
-    workComfort = models.CharField('Вас устраивает организация условий труда?',
-                                   help_text='качество осветления, температура в помещении, общее впечатления от офиса',
-                                   choices=CHISES_YES_NO, max_length=5)
-    firstWeek = models.CharField('Как прошла Ваша первая рабочая неделя?',
-                                 help_text='имеется в виду передали Вам необходимую информацию и инструменты для выполнения',
-                                 choices=CHISES_YES_NO, max_length=5)
-    user = models.ForeignKey(Staff, on_delete=models.CASCADE, null=True, blank=True)
+
+class Quith(models.Model):
+    date_crearte = models.DateField('Дата создания', auto_now_add=True)
+    name = models.CharField('Название опроса', max_length=120)
+    slug = models.SlugField('URL для опроса', max_length=125)
+    # questions = models.ForeignKey(Quessions, verbose_name='Вопросы', on_delete=models.DO_NOTHING)
+
     class Meta:
-        ordering = ['-dateAnsvered']
-        verbose_name = 'Опрос первой недели'
-        verbose_name_plural = 'Опрос первой недели'
+        ordering = ['-date_crearte']
+        verbose_name = 'Опросы'
+        verbose_name_plural = 'Опросы'
 
     def __str__(self):
-        return str(self.dateAnsvered)
+        return f'{self.name}'
+
+class Quessions(models.Model):
+    question = models.CharField('Вопрос', max_length=300)
+    idsort = models.PositiveSmallIntegerField('Порядок сортировки', default=0)
+    # answer = models.ForeignKey(VariantsAnswer, on_delete=models.DO_NOTHING)
+    quith = models.ForeignKey(Quith, verbose_name='Опрос', on_delete=models.CASCADE, null=True, )
+
+    class Meta:
+        ordering = ['idsort']
+        verbose_name = 'Вопросы'
+        verbose_name_plural = 'Вопросы'
+
+    def __str__(self):
+        return self.question
+
+class VariantsAnswer(models.Model):
+    answer = models.CharField('Вариант ответа', max_length=300, null=True, blank=True)
+    idsort = models.PositiveSmallIntegerField('Порядок сортировки', default=0, null=True, blank=True)
+    questions = models.ForeignKey(Quessions, verbose_name='Вопросы', on_delete=models.CASCADE, null=True,)
+
+    class Meta:
+        ordering = ['idsort']
+        verbose_name = 'Варианты ответа'
+        verbose_name_plural = 'Варианты ответа'
+    def __str__(self):
+        return f'{self.answer}'
+
+def names():
+    return str(datetime.datetime.now().timestamp())
+
+
+class Interviewed(models.Model):
+    userName = models.CharField('Имя', max_length=250, default=names)
+    user = models.ForeignKey(Staff, on_delete=models.DO_NOTHING, null=True, blank=True)
+    # quith = models.ForeignKey(Quith, on_delete=models.DO_NOTHING, null=True, blank=True)
+    # questions = models.ForeignKey(Quessions, on_delete=models.DO_NOTHING, null=True, blank=True)
+    # answer = models.ForeignKey(VariantsAnswer, on_delete=models.DO_NOTHING, null=True, blank=True)
+    # writeAnswer = models.CharField('Ответ клиента', max_length=1000, null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'Респонденты'
+        verbose_name = 'Респонденты'
+    def __str__(self):
+        return self.userName
+
+
+class InterviewedAnswer(models.Model):
+    userName = models.ForeignKey(Interviewed, on_delete=models.CASCADE, null=True, blank=True)
+    quith = models.ForeignKey(Quith, on_delete=models.DO_NOTHING, null=True, blank=True)
+    questions = models.ForeignKey(Quessions, on_delete=models.DO_NOTHING, null=True, blank=True)
+    answer = models.ForeignKey(VariantsAnswer, on_delete=models.DO_NOTHING, null=True, blank=True)
+    writeAnswer = models.CharField('Ответ клиента', max_length=1000, null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'Ответы респондентов'
+        verbose_name = 'Ответы респондентов'
+    def __str__(self):
+        return f'{self.quith}'

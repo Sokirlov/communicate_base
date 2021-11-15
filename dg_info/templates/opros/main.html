@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="bg-light" style="margin-top: -50px; padding-top: 30px; padding-bottom: 50px;">
+<div class="container w-75 mt-5 pt-2 pb-3 bg-white" >
+<h1 class="text-center">Опросы</h1>
+    {% for q in quiz %}
+    <div class="row">
+        <div class="col">
+            <a href="{{ q.slug }}"> {{ q.name }}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

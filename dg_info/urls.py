@@ -14,7 +14,7 @@ urlpatterns = [
     path('blog/', include('blog.urls'), name='blog'),
     path('about/', include('about.urls'), name='about'),
     path('contractors/', include('contractors.urls'), name='contractors'),
-    path('oneweek/', include('oprosnik.urls'), name='oprosnik'),
+    path('quiz/', include('oprosnik.urls'), name='oprosnik'),
     path('', TemplateView.as_view(template_name='index.html'), name='Index'),
     path('graphic/', Structure.as_view(), name='tmp'),
     path('birthdays/', BirthdayView.as_view(), name='birthdays'),
